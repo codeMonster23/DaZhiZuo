@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>我的笔记</title>
+		<link rel="stylesheet" href="../css/public/global.css">
+		<link rel="stylesheet" href="../css/public/public.css">
+		<link rel="stylesheet" href="../css/notes/note.css">
+		<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="../js/public/placeholder.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="w1305pxAuto inner clearfix">
+				<div class="left logo">
+					<a href="">大智作</a>
+					<img src="../images/notes/slogan.png" alt="">
+				</div>
+				<div class="left nav">
+					<a href="" class="cur">我的</a>
+					<a href="">发现</a>
+				</div>
+				<div class="right account">
+					<span class="username">许馨</span>
+					<span>[ <a href="">退出</a> ]</span>
+				</div>
+			</div>
+		</div>
+		<div class="main clearfix">
+			<div class="left sidebar">
+				<div class="profile">
+					<div class="avatar">
+						<img src="../imagesTemp/notes/index-avatar.jpg" width="100" height="100" alt="">
+					</div>
+					<div class="name tc">许欣</div>
+				</div>
+				<div class="sidenav">
+					<div class="item cur">
+						<h2>首页</h2>
+					</div>
+					<div class="item item2">
+						<h2>我的智作</h2>
+						<ul>
+							<li><a href="">我的写作</a></li>
+							<li><a href="">我的报告</a></li>
+							<li><a href="">我的成果</a></li>
+						</ul>
+					</div>
+					<div class="item item3">
+						<h2>我的笔记</h2>
+						<ul>
+							<li><a href="">我的笔记</a></li>
+							<li><a href="">我的笔记本</a></li>
+						</ul>
+					</div>
+					<div class="item item4">
+						<h2>我的素材库</h2>
+						<ul>
+							<li><a href="">搜索CNKI素材库</a></li>
+							<li><a href="">我的CNKI素材库</a></li>
+							<li><a href="">我的原创素材库</a></li>
+							<li><a href="">我的多媒体素材库</a></li>
+							<li><a href="">我的百科素材库</a></li>
+						</ul>
+					</div>
+					<div class="item item5">
+						<h2><a href="">回收站</a></h2>
+					</div>
+				</div>
+			</div>
+			<div class="left wrap noteWrap">
+				<div class="module mynote">
+					<div class="module-hd">
+						<div class="left tabnav">
+							<span class="cur">笔记</span>
+							<span>笔记本</span>
+						</div>
+						<!-- <div class="right search clearfix">
+							<div class="left dropdown">
+								<p>网页摘记</p>
+								<ul>
+									<li><a href="javascript:;">网页摘记</a></li>
+									<li><a href="javascript:;">网页摘记</a></li>
+									<li><a href="javascript:;">网页摘记</a></li>
+								</ul>
+							</div>
+							<div class="left searchbox clearfix">
+								<input type="text" placeholder="查找笔记">
+								<input type="button">
+							</div>
+						</div> -->
+						<div class="right search clearfix">
+							<div class="left searchbox clearfix">
+								<input type="text" placeholder="查找笔记本">
+								<input type="button">
+							</div>
+						</div>
+					</div>
+					<div class="module-bd">
+						<div class="filter">
+							<label class="cur"><input type="radio" name="note" checked>全部笔记</label>
+							<label><input type="radio" name="note">标星笔记</label>
+						</div>
+						<div class="notelist clearfix">
+							<div class="item new">
+								新建笔记
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star active">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt class="w100">
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title clearfix">
+									<h4><a href="" target="_blank">知乎上45个神回复知乎上45个神回复知乎上45个神回复</a></h4>
+								</div>
+								<dl>
+									<dt>
+										<p>交朋友的标准是什么？交朋友的标准是么？交朋友的标准是什么？或者正常…</p>
+										<p class="left date">2017-12-07</span>
+									</dt>
+									<dd>
+										<a href="" target="_blank"><img src="../imagesTemp/notes/mynote-img.jpg" width="60" height="60" alt=""></a>
+									</dd>
+								</dl>
+								<div class="info clearfix">
+									<div class="left star">已标星</div>
+									<div class="right action">
+										<span class="edit"></span>
+										<span class="transfer"></span>
+										<span class="del"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page tc">
+							<a href="" class="cur">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">4</a>
+							<a href="">5</a>
+							<span>...</span>
+							<a href="">下一页</a>
+							<a href="">尾页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// 左右高度自适应 
+			var sHeight=$('.sidebar').height();
+			var cHeight=$('.wrap').height();
+			var arrHeight=[sHeight,cHeight];
+			var maxHeight=Math.max.apply(null,arrHeight);
+			$('.sidebar').height(maxHeight);
+			$('.wrap').height(maxHeight);
+
+			// 下拉
+			$('.dropdown p').mouseenter(function () {
+				$(this).siblings('ul').slideDown(200);
+			});
+			$('.dropdown').mouseleave(function () {
+				$(this).find('ul').slideUp(200);
+			});
+
+			// 单选按钮更改样式
+			$('.mynote .filter label input').change(function () {
+				$(this).parent().addClass('cur').siblings().removeClass('cur');
+			});
+
+			// // 遮罩层
+			// var $mask=$('<div class="mask"></div>');
+			// $('<p></p>').html('取消标星').appendTo($mask);
+			// $('.mynote .notelist .item:not(.new)').hover(function () {
+			// 	$(this).append($mask);
+			// },function () {
+			// 	$(this).find('.mask').remove();
+			// })
+
+		</script>
+	</body>
+</html>

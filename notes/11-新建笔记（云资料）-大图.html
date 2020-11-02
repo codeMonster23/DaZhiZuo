@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>新建笔记</title>
+		<link rel="stylesheet" href="../css/public/global.css">
+		<link rel="stylesheet" href="../css/public/public.css">
+		<link rel="stylesheet" href="../css/notes/note.css">
+		<link rel="stylesheet" href="../css/Articles/database.css" >
+		<link rel="stylesheet" href="../css/database/jquery.mCustomScrollbar.css">
+		<style type="text/css">
+			html,body{
+				height: 100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="createNote">
+			<div class="header clearfix">
+				<div class="left logo">
+					<a href="">CNKI大智作 - 笔记</a>
+				</div>
+				<div class="right account">
+					<span class="avatar"><img src="../imagesTemp/notes/index-avatar.jpg" alt=""></span>
+					<span class="username">许馨</span>
+					<span>[ <a href="">退出</a> ]</span>
+				</div>
+			</div>
+			<div class="container clearfix">
+				<div class="left leftbar">
+					<ul>
+						<li class="local "><a href="javascript:;">本地摘记</a></li>
+						<li class="web"><a href="javascript:;">网页摘记</a></li>
+						<li class="nb"><a href="javascript:;">笔记本</a></li>
+						<li class="data cur"><a href="javascript:;">资料管家</a></li>
+					</ul>
+				</div>
+				<div class="left middlebar"  style="width:auto;">
+					<div class="databaseWrap">
+			           <div class="db-header clearfix">
+			               <span class="cur">我的云资料</span>
+			               <span>我的CNKI资料</span>
+			           </div>
+			           <div class="cBox">
+			           		<a href="javascript:;" class="closeBtn">关闭窗口</a>
+			           		<div class="search">
+			                    <input type="text" class="left colorGrey" value="请输入关键词">
+			                    <div class="left dropdown">
+			                        <p>全部</p>
+			                        <ul>
+			                            <li><a href="javascript:;">全部</a></li>
+			                            <li><a href="javascript:;">文献</a></li>
+			                            <li><a href="javascript:;">百科</a></li>
+			                            <li><a href="javascript:;">图片</a></li>
+			                        </ul>
+			                    </div>
+			                    <a href="javascript:;" class="left btn"></a>
+			                </div> 
+			                <div class="db-title clearfix">
+			                    <h4 class="left">全部资料 &gt; 检索</h4>
+			                    <div class="right mode">
+			                        <span class="pic-icon cur"></span>
+			                        <span class="list-icon"></span>
+			                    </div>
+			                </div>
+			                <div class="tabnav">
+			                    <span class="cur">全部</span>
+			                    <span>文档</span>
+			                    <span>图片</span>
+			                    <span>音频</span>
+			                    <span>视频</span>
+			                </div>
+			                <div class="view">
+			                    <div class="btns">
+			                      <a href="javascript:;">上传</a>
+			                      <a href="javascript:;" class="manageBtn">管理</a>
+			                    </div>
+			                    <ul class="picMode clearfix">
+			                        <li class="folder">
+			                            <img src="../images/Articles/database/folder.png" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                        </li>
+			                        <li class="folder">
+			                            <img src="../images/Articles/database/folder.png" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                        </li>
+			                        <li class="folder">
+			                            <img src="../images/Articles/database/folder.png" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                        </li>
+			                        <li class="folder">
+			                            <img src="../images/Articles/database/folder.png" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                        </li>
+			                        <li class="doc">
+			                            <img src="../imagesTemp/database/doc.jpg" width="66" height="90" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                            <span class="insertBtn">插入</span>
+			                        </li>
+			                        <li class="doc">
+			                            <img src="../imagesTemp/Articles/pic4.jpg" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                            <span class="insertBtn">插入</span>
+			                        </li>
+			                        <li class="video">
+			                            <img src="../imagesTemp/Articles/pic4.jpg" alt="">
+			                            <i class="icon"></i>
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                            <span class="insertBtn">插入</span>
+			                        </li>
+			                        <li class="audio">
+			                            <img src="../imagesTemp/database/audio.png" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                            <span class="insertBtn">插入</span>
+			                        </li>
+			                        <li class="pic">
+			                            <img src="../imagesTemp/Articles/pic1.jpg" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                            <span class="insertBtn">插入</span>
+			                        </li>
+			                        <li class="pic">
+			                            <img src="../imagesTemp/Articles/pic1.jpg" alt="">
+			                            <p class="title">儿科冬季常见病儿科冬季常见病</p>
+			                            <span class="insertBtn">插入</span>
+			                        </li>
+			                    </ul>
+			                </div>
+			                <div class="paging">
+			                  <a href="" class="cur">首页</a>
+			                  <a href="">上一页</a>
+			                  <span>3/5</span>
+			                  <a href="">下一页</a>
+			                  <a href="">末页</a>
+			                </div>
+			           </div>
+			        </div>
+				</div>
+				<div class="left rightbar">
+					<div class="r1 clearfix">
+						<div class="left dropdown clearfix">
+							<p>未分类</p>
+							<ul>
+								<li><a href="javascript:;">未分类</a></li>
+								<li><a href="javascript:;">笔记本</a></li>
+							</ul>
+						</div>
+						<div class="left dropdown">
+							<p>笔记本</p>
+							<ul>
+								<li><a href="javascript:;">未分类</a></li>
+								<li><a href="javascript:;">笔记本</a></li>
+							</ul>
+						</div>
+						<div class="left action clearfix">
+							<a href="" class="edit"></a>
+							<span class="tag">标签</span>
+							<span class="tag">标签</span>
+							<span class="tag">标签</span>
+							<a href="" class="add">+</a>
+						</div>
+					</div>
+					<div class="r2 clearfix">
+						<input type="text" placeholder="请输入标题">
+						<div class="right handle clearfix">
+							<a href="" class="btn">保存</a>
+							<span class="share"></span>
+							<span class="collect"></span>
+							<span class="dot dropdown">
+								<p></p>
+								<ul style="display: none;">
+									<li><a href="javascript:;">转移到</a></li>
+									<li><a href="javascript:;">导出为Word</a></li>
+									<li><a href="javascript:;">打印</a></li>
+									<li><a href="javascript:;">删除</a></li>
+									<li><a href="javascript:;">导出为pdf</a></li>
+									<li><a href="javascript:;">导出为htm</a></li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<div class="editorbox"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="../js/database/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script type="text/javascript" src="../js/public/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../js/notes/common.js"></script>
+		<script type="text/javascript">
+			commonFunction(0,false)
+		</script>
+	</body>
+</html>

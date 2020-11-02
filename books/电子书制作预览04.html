@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子书制作</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/public/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/public/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/books/book.css" rel="stylesheet" type="text/css">
+    <link href="../css/books/make.css" rel="stylesheet" type="text/css">
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/jquery.promptToggle.js"></script>
+    <script src="../js/public/jquery.mCustomScrollbar.js"></script>
+    <script src="../js/books/modernizr.2.5.3.min.js"></script>
+    <script src="../js/books/hash.js"></script>
+    <script src="../js/books/turn.js"></script>
+    <script src="../js/books/turn.html4.min.js"></script>
+   <!-- <script src="../js/books/zoom.min.js"></script>-->
+    <script src="../js/books/magazine.js"></script>
+</head>
+
+<body style="overflow:hidden;">
+	<div class="mheader">
+    	<div class="title"><div class="textWrap" ><span class="text">中国制造新名片</span></div></div>
+        <div class="widget"><a href="javascript:;" class="btn new right">新作一本</a><a href="javascript:;" class="btn edit right">编辑本书</a></div>
+    </div>
+    <div class="preContent bg04">
+    	
+        <div class="preMain">
+        	<div class="toolbar">
+            	<div class="icons">
+                	<a href="javascript:;" class="left icon1"></a>
+                    <a href="javascript:;" class="left icon2"></a>
+                    <span class="line"></span>
+                    <a href="javascript:;" class="left icon3"></a>
+                    <a href="javascript:;" class="left icon4"></a>
+                    <div class="left paging">1/20</div>
+                    <a href="javascript:;" class="left icon7"></a>
+                     <a href="javascript:;" class="left icon5"></a>
+                    <a href="javascript:;" class="left icon6"></a>
+					<span class="line"></span>
+                    <a href="javascript:;" class="left icon8"></a>
+                    <a href="javascript:;" class="left icon9"></a>
+                </div>
+            </div>
+        </div>
+        <!--电子书预览区域-->
+     <div id="canvas">
+      <div class="magazine-viewport">
+        	<div class="container">
+                <div class="magazine">
+                   <!-- <div ><img src="../imagesTemp/books/pic-book.jpg"></div>
+                    <div ><img src="../imagesTemp/books/0.png"></div>
+                    <div><img src="../imagesTemp/books/2.png"></div>
+                    <div><img src="../imagesTemp/books/3.png"></div>
+                    <div><img src="../imagesTemp/books/4.png"></div>
+                    <div><img src="../imagesTemp/books/5.png"></div>
+                    <div><img src="../imagesTemp/books/6.png"></div>
+                    <div ><img src="../imagesTemp/books/7.png"></div>-->
+                </div>
+            </div>
+       </div>
+       </div>
+<script type="text/javascript">
+var height=$(window).height(),
+       dis=$(".magazine").css("top")
+       heightimg=height-144
+	   $(".page-wrapper").height(heightimg)
+       $(".page-wrapper").width(heightimg/1.37)
+	   $(".magazine").css({"width":heightimg*2/1.37,"height":heightimg})
+	    $(".magazine").css("left",-heightimg/1.37)
+// Load the HTML4 version if there's not CSS transform
+function loadApp() {
+
+ 	$('#canvas').fadeIn(1000);
+
+ 	var flipbook = $('.magazine');
+
+ 	// Check if the CSS was already loaded	
+
+	if (flipbook.width()==0 || flipbook.height()==0) {
+
+		setTimeout(loadApp, 10);
+
+		return;
+
+	}
+	// 创建flipbook
+
+	flipbook.turn({			
+
+			width: heightimg*2/1.37,
+
+  			height:heightimg,
+
+			duration: 1000,   //翻页速度，值越小越快
+
+			// Hardware acceleration
+
+			acceleration: !isChrome(),
+
+			// Enables gradients
+
+			gradients: true,			
+
+			// Auto center this flipbook
+
+			autoCenter: true,
+			// Elevation from the edge of the flipbook when turning a page
+
+			elevation: 50,
+
+			// The number of pages
+
+			pages: 7,
+
+			// Events
+
+			when: {
+
+				turning: function(event, page, view) {					
+
+					var book = $(this),
+
+					currentPage = book.turn('page'),
+
+					pages = book.turn('pages');			
+
+					// Show and hide navigation buttons
+
+					disableControls(page); 				
+
+				},
+				turned: function(event, page, view) {
+
+					disableControls(page);
+
+					$(this).turn('center');
+
+					if (page==1) { 
+
+						$(this).turn('peel', 'br');
+
+					}
+
+				},
+				missing: function (event, pages) {
+
+					// Add pages that aren't in the magazine
+
+					for (var i = 0; i < pages.length; i++)
+
+						addPage(pages[i], $(this));
+
+				}
+				}
+
+	});
+	// Zoom.js
+
+	$('.magazine-viewport').zoom({
+
+		flipbook: $('.magazine'),
+
+		max: function() { 			
+
+			return largeMagazineWidth()/$('.magazine').width();
+
+		}, 
+
+		when: {
+
+			swipeLeft: function() {
+
+				$(this).zoom('flipbook').turn('next');
+
+			},
+
+			swipeRight: function() {				
+
+				$(this).zoom('flipbook').turn('previous');
+
+			},
+		resize: function(event, scale, page, pageElement) {
+
+				if (scale==1)
+
+					loadSmallPage(page, pageElement);
+
+				else
+
+					loadLargePage(page, pageElement);
+
+			}}
+
+	});		
+	// URIs - Format #/page/1 
+
+	Hash.on('^page\/([0-9]*)$', {
+
+		yep: function(path, parts) {
+
+			var page = parts[1];
+
+			if (page!==undefined) {
+
+				if ($('.magazine').turn('is'))
+
+					$('.magazine').turn('page', page);
+
+			}
+
+		},
+
+		nop: function(path) {
+
+			if ($('.magazine').turn('is'))
+
+				$('.magazine').turn('page', 1);
+
+		}
+
+	});	
+	$(window).resize(function() {
+
+		resizeViewport();
+
+	}).bind('orientationchange', function() {
+
+		resizeViewport();
+
+	});		
+	resizeViewport();
+
+	$('.magazine').addClass('animated');	
+}
+
+ $('#canvas').hide();
+
+yepnope({
+
+	test : Modernizr.csstransforms,
+
+	yep: ['../js/books/turn.js'],
+
+	nope: ['../js/books/turn.html4.min.js'],
+
+	both: ['../js/books/zoom.min.js', '../js/books/magazine.js'],
+
+	complete: loadApp
+
+});
+</script>
+        <div class="sidetool">
+        	<div class="ewm">
+            	<div class="qcodeWrap">
+                	<div class="box">
+                    	<p>扫描二维码</p>
+                        <div class="ewmpic"><img src="../images/books/pre-qcode.jpg" width="102" height="102"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="a a1"></a>
+            <a href="javascript:;" class="a a2"></a>
+            <a href="javascript:;" class="a a3"></a>
+            <a href="javascript:;" class="a a4"></a>
+        </div>
+        <script>
+		$(".a1, .a2").click(function(){
+			$(this).toggleClass("click")
+			})
+		$(".ewm").hover( function(){
+			$(this).find(".qcodeWrap").fadeIn()
+			},
+			function(){
+				$(this).find(".qcodeWrap").fadeOut()
+				})
+        </script>
+    </div>
+    <script>
+	//左侧高度
+	var height=$(window).height()
+	$(".mContent,.sideContent, .sideTemplate, .preContent").height(height-60)
+	$(".cSection").height(height-161)
+	//自定义滚动条的高度设置
+	var heightR=$(".sideTemplate").height()
+	$(".showBox").height(heightR-49)
+	$(".tabCont").eq(0).show().siblings(".tabCont").hide(200)
+	//左侧选择
+	$(".cSection ul li").click(function(){
+		$(this).addClass("cur").siblings("").removeClass("cur")
+		})
+//标题编辑
+	$(".mheader .edit").click(function(){
+		var text =$(".mheader .text").text()
+		$(".textWrap").hide()
+		$(".inputWrap").css("display","inline-block")
+		$(".inputWrap input").val(text)
+		})
+   $(".mheader .inputWrap .cancel").click( function(){
+	   $(".inputWrap").hide()
+		$(".textWrap").css("display","inline-block")
+	   })
+	$(".mheader .inputWrap .cancel").click( function(){
+	   $(".inputWrap").hide()
+		$(".textWrap").css("display","inline-block")
+	   })
+	 $(".mheader .inputWrap .sure").click(function(){
+		 var text =$(".inputWrap input").val()
+		 $(".inputWrap").hide()
+		$(".textWrap").css("display","inline-block")
+		$(".textWrap .text").text(text)
+		 })
+  //工具栏选择
+  $(".topBox").on("click",".toolbar",function(event){
+	  $(this).addClass("click").siblings().removeClass("click")
+	  $(".subBox").hide()
+	$(this).find(".subBox").show() 
+	event.stopPropagation();
+	  })
+ $(".subBox").on("click","li",function(event){
+	 $(this).addClass("cur").siblings().removeClass("cur")
+	 event.stopPropagation();
+	 })
+ $(document).click(function(){
+	 $(".subBox").hide()
+	 })
+	  //右侧按钮控制伸缩
+	 $(".sideTemplate .btn").click(function(){
+		 $(this).parent().toggleClass("auto")
+		 })
+	 //自定义滚动条
+	 $(window).load(function(){	
+		$(".showBox").mCustomScrollbar();})	
+  //阅读背景
+  $(".ul6 li").click(function(){
+	  $(this).addClass("click").siblings().removeClass("click")
+	  })
+   $(".ul6 li").hover(function(){
+	   $(this).children("p").slideDown(200)
+	   },
+	   function(){
+	   $(this).children("p").slideUp(200)
+	   })
+	//背景音乐
+	$(".items .item .text").click(function(){
+		$(".items .item").removeClass("click")
+		$(this).parent().addClass("click")
+				})
+   //选项卡
+   $(".tabWrap .tab").click(function(){
+	   var index=$(this).index()
+	   $(this).addClass("cur").siblings().removeClass("cur")
+	   $(".tabCont").eq(index).show(1).siblings(".tabCont").hide(1)
+	   })
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+@charset "utf-8";
+body { font-family:"Arial","宋体"; font-size:12px; color:#000; background: #ecf0f6;}
+/* 首页 */
+.header{ height: 60px; background-color: #191919; color: #fafafa; font-family: "Microsoft Yahei"; }
+.header .inner{ height: 100%; }
+.header a{ color: #fafafa; }
+.header .logo{ line-height: 60px; font-size: 30px; }
+.header .logo img{ display: inline; vertical-align: middle; margin-left: 20px; }
+.header .nav{ line-height: 60px; margin-left: 436px; }
+.header .nav a{ margin-right: 60px; font-size: 22px; }
+.header .nav a:hover,.header .nav a.cur{ color: #5dc560; }
+.header .account{ line-height: 60px; font-size: 16px; overflow: hidden; }
+.header .account span{ float: left; }
+.main{ width: 1303px; margin: 34px auto 75px; border: 1px solid #e7e7e7; border-bottom-color: #d9d9d9; border-top-color: #f4f4f4; }
+.sidebar{ width: 299px; border-right: 1px solid #dfdfdf; background: #fafafa; font-family: "Microsoft Yahei"; }
+.sidebar .profile{ height: 145px; padding-top: 20px; margin-bottom: 20px; background: #5dc560 url(../../images/note/bg1.jpg) no-repeat; }
+.sidebar .profile .avatar{ width: 100px; height: 100px; border: 1px solid #fff; border-radius: 50%; margin: 0 auto; }
+.sidebar .profile .avatar img{ border-radius: 50%; }
+.sidebar .profile .name{ margin-top: 5px; font-size: 22px; color: #fff; }
+.sidebar .sidenav .item{ padding: 17px 0 8px 28px; border-left:  8px solid #fafafa; border-bottom: 1px solid #e6e6e6; }
+.sidebar .sidenav .item5{ border-bottom: none; }
+.sidebar .sidenav .item.cur{ border-left-color: #8ea2bd; border-bottom: none; background: #edf0f7; }
+.sidebar .sidenav .item h2{ padding-left: 46px; margin-bottom: 9px; background: url(../../images/note/sprite.png) 0 0 no-repeat; font-size: 18px; font-weight: normal; }
+.sidebar .sidenav .item2 h2{ background-position: 0 -22px; }
+.sidebar .sidenav .item3 h2{ background-position: 0 -45px; }
+.sidebar .sidenav .item4 h2{ background-position: 0 -67px; }
+.sidebar .sidenav .item5 h2{ background-position: 0 -89px; }
+.sidebar .sidenav .item li{ line-height: 34px; padding-left: 46px; }
+.sidebar .sidenav .item li a{ font-size: 14px; color: #4a4a4a; }
+.sidebar .sidenav .item li.cur a,.sidebar .sidenav .item li a:hover{ color: #31ac35; }
+.wrap{ width: 1003px; background: #fff; }
+.wrap .module-hd{ height: 53px; line-height: 53px; padding-left: 34px; border-bottom: 1px solid #e8e8e8; font-family: "Microsoft Yahei"; }
+.wrap .module-hd span{ float: left; font-size: 16px; color: #6f6f6f; }
+.wrap .module-hd span.cur{ float: left; padding: 0 6px; border-bottom: 1px solid #000; margin-right: 10px; font-size: 18px; font-weight: normal; color: #000; }
+.wrap .module-bd{ padding-left: 34px; padding-right: 34px; }
+.making .module-bd,.note .module-bd{ padding-top: 40px; }
+.making { margin-bottom: 40px; }
+.making .function{ width: 696px; }
+.making .function li{ float: left; _display: inline; width: 160px; height: 156px; border: 1px solid #d7e8f5; margin-right: 12px; margin-bottom: 12px; background: #f2f7fb; text-align: center; font-size: 16px; font-family: "Microsoft Yahei"; color: #333; cursor: pointer; }
+.making .function li:hover{ border-color: #5dc560; }
+.making .function li img{ margin: 18px auto 8px; transition: all 1s; }
+.making .function li:hover img{ transform: rotate(360deg); }
+.making .news{ width: 215px; height: 326px; padding: 0 11px; border: 1px solid #d7e8f5; background: #f2f7fb; }
+.making .news .title{ height: 34px; margin-top: 6px; border-bottom: 1px solid #ebebeb; }
+.making .news .title span{ line-height: 34px; font-size: 18px; color: #294138; }
+.making .news .title a{ margin-top: 12px; }
+.making .news .list { padding-top: 5px; }
+.making .news .list li{ width: 100%; line-height: 34px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.making .news .list li a{ color: #808080; }
+.more{ color: #38b084; }
+.note .module-hd .btn{ width: 121px; height: 34px; padding-left: 45px; margin-top: 10px; margin-right: 34px; background: #4ebb50 url(../../images/note/sprite.png) 12px -261px no-repeat; color: #fff; font: 16px/34px "Microsoft Yahei"; }
+.note .newCreate{ width: 290px; height: 166px; margin-right: 14px; background-color: #5dc560; font-size: 18px; font-family:"Microsoft Yahei"; color: #fff; cursor: pointer; }
+.note .newCreate img{ margin: 27px auto 8px; transition: all 0.4s; }
+.note .newCreate:hover img{ transform: translateY(-8px); }
+.note .list{ width: 256px; height: 164px; padding: 0 38px 0 20px; border: 1px solid #cdebcd; background: #fafcfa; }
+.note .list2{ margin-left: -1px; }
+.note .list .title h4{ float: left; line-height: 42px; font-size: 16px; font-family: "Microsoft Yahei"; }
+.note .list .title .more{ margin-top: 14px; }
+.note .list li{ width: 100%; line-height: 28px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.note .list li a{ color: #808080; }
+.note .notebook{ height: 160px; margin-top: 32px; margin-bottom: 77px; border-bottom: 36px solid #8ea1bd; }
+.note .notebook li{ position: relative; float: left; width: 147px; height: 180px; margin-right: 10px; font-size: 14px; cursor: pointer; }
+.note .notebook li i{ position: absolute; left: 30px; top: 0; width: 24px; height: 34px; background: url(../../images/note/sprite.png) 0 -126px no-repeat; }
+.note .notebook li.template2 i{ background-position: 0 -160px; }
+.note .notebook li.template3 i{ background-position: 0 -194px; }
+.note .notebook li.template4 i{ background-position: 0 -228px; }
+.note .notebook li.last{ margin-right: 0; }
+.note .notebook li .title{ position: absolute; left: 0; top: 60px; width: 130px; padding-left: 17px; text-align: center; z-index: 2; }
+/* 我的笔记 */
+.noteWrap .tabnav span{ padding: 0 10px; font-size: 18px; cursor: pointer; }
+.noteWrap .module-hd .search{ width: 228px; height: 27px; margin-top: 12px; margin-right: 34px; border: 1px solid #cdebcd; }
+.noteWrap .searchbox input[type="text"]{ float: left; width: 100px; height: 27px; line-height: 27px; padding-left: 13px; background: #fafcfa; }
+.noteWrap .searchbox input[type="text"]:-ms-input-placeholder{ color: #4ebb50; }
+.noteWrap .searchbox input[type="text"]::-webkit-input-placeholder{ color: #4ebb50; }
+.noteWrap .searchbox input[type="button"]{ float: left; width: 32px; height: 27px; background: #fafcfa url(../../images/note/mynote-icon2.png) center no-repeat; cursor: pointer; }
+.dropdown{ position: relative; }
+.mynote .dropdown{ width: 82px; height: 100%; border-right: 1px solid #cdebcd; }
+.dropdown p{ height: 100%; background: url(../../images/note/mynote-icon1.png) 65px center no-repeat; cursor: pointer; }
+.mynote .dropdown p{ width: 71px; line-height: 27px; padding-left: 11px; }
+.dropdown ul{ position: absolute; top: 27px; left: -1px; width: 100%; border: 1px solid #e1e1e1; margin-top: -1px; background: #fff; z-index: 10; display: none; }
+.mynote .dropdown ul{ border: 1px solid #cdebcd; }
+.dropdown li a{ display: block; border-bottom: 1px solid #f2f2f2; }
+.mynote .dropdown li a{ line-height: 27px; padding-left: 11px; }
+.dropdown li a:hover{ background: #5dc560; color: #fff; }
+.mynote .filter label{ display: inline-block; height: 18px; line-height: 18px; margin: 24px 18px 16px 0; font-size: 14px; color: #bebdbd; }
+.mynote .filter label input{ vertical-align: middle; margin-right: 8px; margin-top: -2px; }
+.mynote .filter label.cur{ font-weight: bold; color: #31ac35; }
+.mynote .notelist { margin-right: -34px; }
+.mynote .notelist .item{ position: relative; float: left; width: 282px; height: 128px; padding: 0 10px; margin-right: 12px; margin-bottom: 20px; border: 1px solid #cdebcd; background-color: #fafcfa; }
+.mynote .notelist .item .title{ margin-bottom: 8px; margin-top: 11px; }
+.mynote .notelist .item h4{ float: left; line-height: 28px; width: 260px; font-size: 16px; font-family: "Microsoft Yahei"; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.mynote .notelist .item i{ float: right; width: 20px; height: 18px; margin-top: 5px; background: url(../../images/note/sprite.png) 0 -300px  no-repeat; }
+.mynote .notelist .item i.audio{ background-position: 0 -320px; }
+.mynote .notelist .item i.pic{ background-position: 0 -340px; }
+.mynote .notelist .item i.web{ background-position: 0 -360px; }
+.mynote .notelist .item dl{ height: 60px; }
+.mynote .notelist .item dt{ float: left; width: 205px; }
+.mynote .notelist .item dt p{ line-height: 24px; margin-bottom: 8px; margin-top: -8px; color: #808080; }
+.mynote .notelist .item dt span{ color: #38b084; }
+.mynote .notelist .item dd{ float: right; }
+.mynote .notelist .item.new{ width: 164px; line-height: 130px; padding-left: 128px; background: #5dc560 url(../../images/note/mynote-icon3.png) 54px center no-repeat; color: #fff; font-size: 18px; font-family: "Microsoft Yahei"; cursor: pointer; }
+.mynote .notelist .item .mask{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; line-height: 128px; background-color: #000; opacity: .7; filter: alpha(opacity=70); /* display: none; */
+	z-index: 10; }
+.mynote .notelist .item .mask p{ width: 170px; padding-left: 133px; background: url(../../images/note/mynote-icon4.png) 97px center no-repeat; color: #fff; font-size: 18px; font-family: "Microsoft Yahei"; }
+.page{ margin: 20px 0 100px; }
+.page li{ display: inline-block; *display: inline; *zoom: 1; height: 40px; line-height: 40px; padding: 0 12px; margin: 0 3px; border: 1px solid #cdebcd; }
+.page li.cur{ background: #5dc560; }
+.page li.cur a{ color: #fff; }
+/* 我的笔记本 */
+.logo .subtitle{ margin-left: 5px; font-size: 16px; color: #fafafa; }
+.mynotebook .searchbox input[type="text"]{ width: 183px; }
+.mynotebook .category{ position: relative; padding:13px 0 13px 28px; background: #fafafa; font: 14px/28px "Microsoft Yahei"; }
+.mynotebook .category .list{ width: 879px; height: 36px; overflow: hidden; }
+.mynotebook .category h4,.mynotebook .category .addbtn{ margin: 3px; }
+.mynotebook .category h4{ font-weight: normal; color: #38b084; }
+.mynotebook .category .addbtn{ width: 28px; height: 28px; border: 1px solid #38b084; border-radius: 5px; color: #38b084; font-size: 20px; }
+.mynotebook .category .item{ position: relative; float: left; height: 28px; line-height: 28px; padding: 0 20px; margin: 3px; border: 1px solid #dfdfdf; border-radius: 5px; background: #fff; overflow: hidden; }
+.mynotebook .category .item.cur{ border-color: #5dc560; background: #5dc560; color: #fff; }
+.mynotebook .category .item.active{ padding: 0; border-color: #38b084; }
+.mynotebook .category .item .savebtn{ float: left; width: 16px; height: 28px; background: url(../../images/note/mynotebook-icon1.png) center no-repeat; cursor: pointer; }
+.mynotebook .category .item input{ float: left; width: 102px; height: 28px; line-height: 28px; text-align: center; }
+.mynotebook .category .item .delbtn{ position: absolute; top: 10px; right: 6px; width: 7px; height: 7px; background: url(../../images/note/mynotebook-icon2.png) no-repeat; cursor: pointer; }
+.mynotebook .category .foldbtn{ position: absolute; right: 74px; bottom: 16px; width: 30px; height: 28px; background: url(../../images/note/mynotebook-icon3.png) center no-repeat; transition: all 1s; }
+.mynotebook .category .unfoldbtn{ transform: rotate(180deg); }
+.mynotebook .category .editbtn{ position: absolute; right: 34px; bottom: 16px; width: 38px; height: 28px; line-height: 28px; border: 1px solid #60bc98; border-radius: 5px; color: #38b084; }
+.mynotebook .notebookList{ padding: 22px 28px; }
+.mynotebook .notebookList .item{ position: relative; float: left; width: 176px; height: 215px; margin:14px 6px; background: url(../../images/note/notebook1.png) no-repeat; text-align: center; color: #343434; font-size: 14px; font-family: "Microsoft Yahei"; }
+.mynotebook .notebookList .item.new{ background: url(../../images/note/notebook-new.png) no-repeat; cursor: pointer; }
+.mynotebook .notebookList .item h2{ margin: 55px 0 20px; font-size: 16px; font-weight: normal; }
+.mynotebook .notebookList .item .action{ position: absolute; left: 10px; bottom: 3px; width: 56px; height: 30px; background: #fff; opacity: .7; filter: alpha(opacity=70); text-align: center; }
+.mynotebook .notebookList .action span{ display: inline-block; width: 16px; height: 16px; margin: 7px 3px; background: url(../../images/note/sprite.png) 0 -385px no-repeat; cursor: pointer; }
+.mynotebook .notebookList .action span.del{ background-position: 0 -401px; }
+.modalbg{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: .7; filter: alpha(opacity=70); }
+.modal{ position: fixed; left: 50%; margin-left: -201px; top: 50%; margin-top: -101px; width: 403px; height: 203px; background: #fff; }
+.modal-hd{ padding-left: 16px; height: 46px; line-height: 46px; border-bottom: 2px solid #4ebb50; font: bold 16px/46px "Microsoft Yahei"; color: #4ebb50; }
+.modal .close{ position: absolute; top: 4px; right: 4px; width: 20px; height: 20px; background: url(../../images/note/sprite.png) 0 -420px no-repeat; }
+.modal1 .modal-bd{ height: 65px; padding-top: 30px;}
+.modal1 .modal-bd input{ display: block;width: 300px; height: 30px; line-height: 30px;padding: 0 10px;border: 1px solid #cdebcd;margin:0 auto;background: #faf9f9;}
+.modal-ft{ height: 60px; background: #f7f7f7; }
+.modal button{ width: 78px; height: 34px; line-height: 34px; margin: 12px 2px; border: 1px solid #4ebb50; border-radius: 4px; background: #4ebb50; color: #fff; font: 16px/34px "Microsoft Yahei"; }
+.modal .btn-white{ background: #fff; color: #4ebb50; }
+.modal .btn-grey{ border-color: #e6e6e6; background: #e6e6e6; color: #333; }
+.modal2,.modal3{ width: 480px; margin-left: -240px; }
+.modal2{ height: 310px; margin-top: -155px; font-family: "Microsoft Yahei"; }
+.modal2 .modal-hd,.modal3 .modal-hd{ font-size: 18px; color: #333; }
+.modal2 .modal-bd{ height: 203px; padding-left: 23px; color: #333; }
+.modal2 .modal-bd h4{ padding-left: 28px; margin: 20px 0 25px; background: url(../../images/note/star.png) left center no-repeat; font-size: 16px; font-weight: normal; }
+.modal2 .modal-bd p{ line-height: 30px; margin-left: 38px; font-size: 14px; overflow: hidden; }
+.modal2 .modal-bd .p1{ padding-left: 50px; }
+.modal2 .modal-bd p label,.modal2 .modal-bd p span{ float: left; }
+.modal2 .modal-bd p label input{ vertical-align: middle; margin-top: -2px; margin-right: 8px; }
+.modal2 .modal-bd span{ margin-left: 14px; color: #666; }
+.modal2 .modal-bd .p1 input{ float: left; width: 78px; height: 28px; line-height: 28px; border: 1px solid #dcdcdc; margin-left: 8px; text-align: center; }
+.modal3{ height: 340px; margin-top: -170px; }
+.modal3 .modal-bd ul{ text-align: center; font-size: 0; }
+.modal3 .modal-bd li{ display: inline-block; *display: inline; *zoom: 1; width: 79px; margin: 20px 30px 0; font-size: 16px; font-family:  "Microsoft Yahei"; cursor: pointer; }	
+.modal3 .modal-bd li img{ margin-bottom: 5px; }
+/* 笔记本 */
+.notebookPage{ background: url(../../images/note/notebookPage-bg.jpg); }
+.notebookPage .banner{ height: 336px; padding-top: 14px; background: url(../../images/note/banner-bg.jpg); font-family:  "Microsoft Yahei"; }
+.notebookPage .topnav{ height: 32px; }
+.notebookPage .topnav .btn{ width: 88px; height: 30px; line-height: 30px; padding-left: 12px; border: 1px solid #299f74; border-radius: 3px; background: #67d090; font-size: 16px; }
+.notebookPage .breadcrumb a{ font-size: 16px; color: #00462c; }
+.notebookPage .banner .title{ margin: 11px 0 15px; font-size: 30px; color: #fff; text-shadow: 1px 1px 1px rgba(0,0,0,.7); }
+.notebookPage .banner .tag span{ float: left; height: 24px; line-height: 24px; padding: 0 12px; margin: 2px; border: 1px solid #299f74; border-radius: 3px; background: #67d090; }
+.notebookPage .searchbox{ width: 278px; height: 28px; line-height: 28px; border: 1px solid #299f74; border-radius: 3px; background: #d2f4d2; }
+.notebookPage .searchbox input[type="text"]{ float: left; width: 227px; height: 28px; line-height: 28px; padding-left: 15px; background: #d2f4d2; }
+.notebookPage .searchbox input[type="button"]{ float: left; width: 36px; height: 28px; background: url(../../images/note/mynote-icon2.png) center no-repeat; }
+.notebookPage .searchbox input[type="text"]:-ms-input-placeholder{ color: #299f74; }
+.notebookPage .searchbox input[type="text"]::-webkit-input-placeholder{ color: #299f74; }
+.notebookPage .container{ position: relative; margin-top: -200px; margin-bottom: 150px; border-radius: 5px; background: #fff url(../../images/note/staple.jpg) 377px top repeat-y; -webkit-box-shadow: -3px 3px 5px rgba(1,1,1,.4); box-shadow: -3px 3px 5px rgba(1,1,1,.4); }
+.notebookPage .container .topbg,.notebookPage .container .bottombg{ height: 5px; background: url(../../images/note/topbg.png) no-repeat; }
+.notebookPage .container .bottombg{ background-image: url(../../images/note/bottombg.png); }
+.notebookPage .mainWrap{ height: 1047px; }
+.notebookPage .menu{ width: 360px; height: 100%; padding: 0 51px 0 20px; background: url(../../images/note/sidebg.jpg) repeat-y; }
+.notebookPage .menu .list{ margin-bottom: 40px; margin-top: 14px; }
+.notebookPage .list .item{ padding: 18px 16px 12px 10px; border-bottom: 1px solid #e4e4e4; }
+.notebookPage .menu .item.spec .content{ width: 240px; }
+.notebookPage .menu .item h4{ margin-bottom: 10px; font-size: 16px; font-weight: normal; font-family:  "Microsoft Yahei"; }
+.notebookPage .menu .item p{ line-height: 24px; color: #808080; }
+.notebookPage .menu .item p.time{ color: #38b084; }
+.notebookPage .menu .item .pic{ width: 60px; height: 60px; margin-top: 10px; }
+.notebookPage .menu .dropdown{ width: 64px; height: 20px; line-height: 20px; border: 1px solid #e1e1e1; }
+.notebookPage .menu .dropdown p{ padding-left: 7px; background-position: 47px center; }
+.notebookPage .menu .dropdown ul{ top: 20px; }
+.notebookPage .menu .dropdown li a{ padding-left: 7px; }
+.notebookPage .menu .page li{ width: 19px; height: 19px; line-height: 19px; padding: 0; margin: 0 1px; }
+.notebookPage .article{ width: 870px; height: 100%; background: url(../../images/note/sidebg.jpg) right repeat-y; font-family:  "Microsoft Yahei"; }
+.notebookPage .article .title{ margin: 42px 0 22px; font-size: 28px; }
+.notebookPage .article .info{ padding: 0 36px; height: 45px; line-height: 45px; margin-bottom: 28px; background: #bdb304 url(../../images/note/sprite.png) 0 -467px no-repeat; font-size: 14px; color: #fff; }
+.notebookPage .article .info .name,.notebookPage .article .info .time{ padding-left: 22px; background: url(../../images/note/icon2.png) left center no-repeat; }
+.notebookPage .article .info .time{ margin-left: 18px; background-image: url(../../images/note/icon3.png); }
+.notebookPage .article .info .handle span{ float: left; width: 20px; height: 27px; margin-left: 13px; margin-top: 9px; background: url(../../images/note/icon4.png) center no-repeat; cursor:pointer; }
+.notebookPage .article .info .handle span.collect{ background-image: url(../../images/note/icon5.png); }
+.notebookPage .article .info .handle span.dot{ position: relative; background-image: url(../../images/note/icon6.png); }
+.handle .dot ul{ left: -135px; top: 28px; width: 155px; }
+.handle .dot li a{ line-height: 30px; padding-left: 12px; }
+.notebookPage .article .info .handle .btn{ width: 59px; height: 27px; line-height: 27px; margin: 9px 2px 0; background: url(../../images/note/sprite.png) 0 -440px no-repeat; text-align: center; color: #000; }
+.notebookPage .article .chapter{ padding: 0 70px 0 40px; }
+.notebookPage .article .chapter p{ line-height: 26px; margin-bottom: 26px; font-size: 14px; }
+.notebookPage .article .chapter img{ display: block; margin: 0 auto; }
+.notebookPage .article .bottombar a{ width: 52px; height: 27px; line-height: 27px; padding-left: 15px; margin-left: 40px; background: url(../../images/note/sprite.png) 0 -512px no-repeat; color: #fff; }
+.notebookPage .article .bottombar a.next{ width: 58px; padding-left: 9px; margin-right: 70px; background-position: 0 -539px; }
+/* 新建笔记 */
+.header .account .avatar{ float: left; width: 48px; height: 48px; margin-top: 6px; margin-right: 12px; }
+.header .account .avatar img{ width: 48px; height: 48px; border-radius: 50%; }
+.createNote .header{ padding: 0 20px 0 12px; }
+.createNote .header .logo{ font-size: 24px; }
+.createNote .leftbar{ width: 86px; border-right: 1px solid #e0e1e5; background: none; }
+.createNote .leftbar li a{ display: block; height: 27px; padding-top: 54px; border-bottom: 1px solid #e0e1e5; background: url(../../images/note/icon7.png) center 19px no-repeat; color: #475d7d; text-align: center; font-size: 14px; font-family: "Microsoft Yahei"; }
+.createNote .leftbar li.cur a{ background-color: #5dc560; background-image: url(../../images/note/icon7-c.png); color: #fff; }
+.createNote .leftbar li.web a{ background-image: url(../../images/note/icon8.png); }
+.createNote .leftbar li.web.cur a{ background-image: url(../../images/note/icon8-c.png); }
+.createNote .leftbar li.nb a{ background-image: url(../../images/note/icon9.png); }
+.createNote .leftbar li.nb.cur a{ background-image: url(../../images/note/icon9-c.png); }
+.createNote .rightbar{ height: 1000px; background: #fff; }
+.createNote .middlebar { width: 262px; height: 100%; border-right: 1px solid #e0e1e5; background: #f9fcf9; }
+.createNote .localExcerpt .panel-hd{ font-size: 0; }
+.createNote .localExcerpt .panel-hd span{ display: inline-block; width: 127px; height: 33px; line-height: 33px; margin: 6px 1px 0; border-top-left-radius: 5px; border-top-right-radius: 5px; background: #8ea2bd; font: 16px/33px "Microsoft Yahei"; color: #fff; cursor:pointer; }
+.createNote .localExcerpt .panel-hd span.cur{ background: #5dc560; }
+.createNote .localExcerpt .tab-nav{ height: 40px; background: #e7f2ec; text-align: center; font-size: 0; }
+.createNote .localExcerpt .tab-nav span{ display: inline-block; line-height: 40px; margin: 0 15px; font: 14px/40px "Microsoft Yahei"; color: #475d7d; cursor:pointer; }
+.createNote .localExcerpt .tab-nav span.cur{ font-weight: bold; color: #000; }
+.createNote .localExcerpt .tab-content .cont{ display: none; }
+.createNote .localExcerpt .tab-content .cont.cur{ display: block; }
+.createNote .middlebar .btn{ display: inline-block; width: 148px; line-height: 40px; border: 1px solid #5dc560; border-radius: 5px; background: url(../../images/note/btnbg.jpg); font: 14px/40px "Microsoft Yahei"; text-align: center; color: #757575; }
+.createNote .localExcerpt .uploading img{ margin:38px auto 20px; }
+.createNote .localExcerpt .uploading h4{ line-height: 24px; margin:11px 0  9px; font-size: 14px; font-family: "Microsoft Yahei"; color: #757575; }
+.createNote .localExcerpt .uploading p{ line-height: 24px; padding-left: 53px; text-align: left; color: #929292; }
+.createNote .localExcerpt .importing{ display: none; font-family: "Microsoft Yahei"; }
+.createNote .localExcerpt .importing .searchField{ padding-top: 10px; background: #e7f2ec; }
+.createNote .localExcerpt .importing .searchbox{ width: 254px; height: 28px; margin: 0 auto; }
+.createNote .localExcerpt .importing .search{ width: 206px; height: 26px; border: 1px solid #cdebcd; background: #fff; }
+.createNote .localExcerpt .importing .search input{ float: left; line-height: 26px; padding-left: 10px; width: 110px; font-size: 12px; }
+.createNote .localExcerpt .importing .search .dropdown{ width: 85px; }
+.createNote .localExcerpt .importing .search .dropdown p{ line-height: 26px; padding-right: 20px; background-position: 70px center; text-align: right; }
+.createNote .localExcerpt .importing .search .dropdown li a{ line-height: 20px; padding-left: 5px; }
+.createNote .localExcerpt .importing .searchBtn{ width: 46px; height: 28px; line-height: 28px; background: url(../../images/note/sprite.png) 0 -605px no-repeat; }
+.createNote .localExcerpt .importing .tab-nav{ height: 30px; padding-top: 12px; border-bottom: 1px solid #e0e1e5; }
+.createNote .localExcerpt .importing .tab-nav span{ margin: 0; padding: 0 7px; line-height: 30px; }
+.createNote .localExcerpt .importing .tab-nav span.cur{ border: 1px solid #e0e1e5; border-bottom: none; background: #f9fcf9; }
+.createNote .localExcerpt .importing .tab-content{ padding: 0 8px; }
+.createNote .localExcerpt .importing .breadcrumb{ border-bottom: 1px solid #cfeccf; margin-top: 15px; line-height: 28px; }
+.createNote .localExcerpt .importing .breadcrumb a{ color: #475d7d; }
+.createNote .localExcerpt .importing .list{ margin-bottom: 17px; margin-top: 12px; }
+.createNote .localExcerpt .importing .list li{ line-height: 36px; padding-left: 8px; font-size: 14px; color: #8ea1bd; }
+.createNote .localExcerpt .importing .list a{ color: #000; }
+.createNote .localExcerpt .importing .list a:hover{ color: #008e04; }
+.createNote .localExcerpt .importing .page li{ height: 21px; line-height: 21px; padding: 0 5px; margin: 0 1px; }
+.createNote .localExcerpt .importing .picList li{ position: relative; display: inline-block; *display: inline; *zoom: 1; width: 115px; padding: 0; margin: 0 3px; font-size: 12px; color: #000; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.createNote .localExcerpt .importing .picList i{ position: absolute; top: 22px; left: 40px; width: 39px; height: 39px; background: url(../../images/note/sprite.png) 0 -566px no-repeat; }
+.createNote .webExcerpt{ width: 240px; margin:100px auto 0; font-size: 14px; font-family: "Microsoft Yahei"; }
+.createNote .webExcerpt h4{ height: 20px; line-height: 20px; background: url(../../images/note/icon10.png) no-repeat; color: #077049; }
+.createNote .webExcerpt input{ width: 238px; height: 26px; line-height: 26px; margin: 16px 0 10px; border: 1px solid #cdebcd; text-align: center; }
+.createNote .webExcerpt .btn{ width: 58px; height: 26px; line-height: 26px; }
+.createNote .webExcerpt p{ margin-top: 18px; color: #757575; }
+.createNote  .rightbar.w638 { width: 638px; }
+.createNote .webpage{ background: #e1e5ea; padding: 12px; }
+.createNote .webpage .web-hd{ height: 32px; margin-bottom: 4px; }
+.createNote .webpage .web-hd .title{ position: relative; width: 124px; height: 31px; border: 1px solid #dcdce0; border-bottom: none; border-top-left-radius: 3px; border-top-right-radius: 3px; background: #ecf0f6; -webkit-box-shadow: inset 0 0 1px #fff; box-shadow: inset 0 0 1px #fff; text-align: center; font: 16px/31px "Microsoft Yahei"; color: #475d7d; }
+.createNote .webpage .web-hd .close{ position: absolute; top: 0; right: 0; width: 15px; height: 16px; background: url(../../images/note/sprite.png) 0 -633px no-repeat; }
+.createNote .webpage .web-hd .addbtn{ width: 23px; height: 23px; background: url(../../images/note/sprite.png) 0 -649px no-repeat; margin-left: 9px; margin-top: 5px; }
+.createNote .rightbar .r1{ margin-left: 19px; margin-top: 12px; font-size: 14px; }
+.createNote .rightbar .r1 .dropdown{ width: 88px; height: 26px; border: 1px solid #eff0f2; margin-left: -1px; } 
+.createNote .rightbar .r1 .dropdown p,.createNote .rightbar .r1 .dropdown li a{ line-height: 26px; padding-left: 4px; }
+.createNote .rightbar .r1 .action{ height: 24px; margin-top: 2px; margin-left: 20px; }
+.createNote .rightbar .r1 .action a,.createNote .rightbar .r1 .action span{ float: left; height: 24px; text-align: center; margin-right: 9px; color: #8a8a8a; }
+.createNote .rightbar .r1 .action .edit{ width: 24px; background: url(../../images/note/icon11.png) center no-repeat; }
+.createNote .rightbar .r1 .action .tag{ padding: 0 15px; line-height: 24px; border-radius: 3px; background: #f6f6f6; }
+.createNote .rightbar .r1 .action .add{ width: 24px; line-height: 24px; border-radius: 3px; background: #f6f6f6; }
+.createNote .rightbar .r2 { padding: 27px 19px 14px; border-bottom: 1px solid #e0e1e5; }
+.createNote .rightbar .r2 input{ float: left; width: 50%; height: 36px; line-height: 36px; font-size: 28px; }
+.createNote .rightbar .r2 .handle .btn{ float: left; height: 27px; width: 79px; line-height: 27px; margin: 3px 2px 0; border-radius: 3px; background: #5dc560; color: #fff; text-align: center; font-size: 16px; font: 16px/27px "Microsoft Yahei"; }
+.createNote .rightbar .r2 .handle span{ float: left; width: 20px; height: 27px; margin-left: 13px; margin-top: 3px; background: url(../../images/note/icon12.png) center no-repeat; cursor: pointer; }
+.createNote .rightbar .r2 .handle span.collect{ background-image: url(../../images/note/icon13.png); }
+.createNote .rightbar .r2 .handle span.dot{ position: relative; background-image: url(../../images/note/icon14.png); }
+
+.modal4{ width: 550px; height: 268px; margin-left: -275px; }
+.modal4 .modal-hd{ font-size: 18px; color: #333; }
+.modal4 .modal-bd { height: 160px; padding: 0 25px; }
+.modal4 .modal-bd .tag span{ position: relative; float: left; width: 98px; height: 26px; line-height: 26px; margin: 23px 15px 20px 0; border: 1px solid #c8c8c8; border-radius: 3px; text-align: center; }
+.modal4 .modal-bd .tag span a{ position: absolute; top: -5px; right: -5px; width: 11px; height: 11px; background: url(../../images/note/sprite.png) 0 -672px no-repeat; }
+.modal4 .modal-bd button{
+	float: left;
+	width: 60px;
+	height: 26px;
+	line-height: 26px;
+	border: 0;
+	font-size: 14px;
+	margin: 2px 0 0 5px;
+}
+.modal4 .inputFiled{
+	position: relative;
+	width: 368px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #e5e5e5;
+}
+.modal4 .inputFiled .list{
+	position: absolute;
+	top: 28px;
+	left: -1px;
+	width: 368px;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+}
+.modal4 .inputFiled .list li{
+	padding-left: 10px;
+	line-height: 30px;
+}
+.modal4 .inputFiled .list li:hover{
+	background: #f5f5f5;
+}
+.modal4 .inputFiled .list li.first{
+	color: #adadad;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我的云资料</title>
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link rel="stylesheet" href="../css/database/database.css">
+	<link rel="stylesheet" href="../css/database/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../js/public/placeholder.js"></script>
+	<script type="text/javascript" src="../js/database/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body>
+	<div class="modal-upload modal-upload-finish mini">
+		<div class="modal-hd clearfix">
+			<span class="title">上传完成（4）</span>
+			<a href="javascript:;" class="zoom"></a>
+			<a href="javascript:;"></a>
+		</div>
+<!-- 		<div class="modal-bd">
+			<div class="successTip">
+				有1个文件上传成功
+				<a href="javascript:;" class="close"></a>
+			</div>
+			<div class="table-wrapper">
+				<table>
+					<tr>
+						<th width="180" class="col1">文件名</th>
+						<th width="58">大小</th>
+						<th width="195" class="col3">上传位置</th>
+						<th width="145">状态</th>
+					</tr>
+					<tr class="complete">
+						<td class="col1 word"><i></i>高中英语语法</td>
+						<td>85k</td>
+						<td  class="col3"><a href="">我的文件</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 pic"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 pdf"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr>
+						<td class="col1 ppt"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="uploading">
+						<td class="col1 word"><i></i>高中英语语法</td>
+						<td>85k</td>
+						<td  class="col3"><a href="">我的文件</a></td>
+						<td class="status">
+							<span class="text">23%（0b/s）</span>
+							<span class="icon pause"></span>
+							<span class="icon del"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="col1 pic"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status">
+							<span class="text">已暂停</span>
+							<span class="icon start"></span>
+							<span class="icon del"></span>
+						</td>
+					</tr>
+					<tr class="fail">
+						<td class="col1 pdf"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status">
+							<span class="text">上传失败</span>
+							<span class="icon restart"></span>
+							<span class="icon del"></span>
+						</td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 word"><i></i>高中英语语法</td>
+						<td>85k</td>
+						<td  class="col3"><a href="">我的文件</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 pic"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+				</table>
+			</div>
+		</div> -->
+	</div>
+	<div class="modal-upload mini">
+		<div class="modal-hd clearfix">
+			<span class="title">正在上传（3/4）</span>
+			<a href="javascript:;" class="zoom"></a>
+			<a href="javascript:;"></a>
+		</div>
+<!-- 		<div class="modal-bd">
+			<div class="table-wrapper">
+				<table>
+					<tr>
+						<th width="180" class="col1">文件名</th>
+						<th width="58">大小</th>
+						<th width="195" class="col3">上传位置</th>
+						<th width="145">状态</th>
+					</tr>
+					<tr class="complete">
+						<td class="col1 word"><i></i>高中英语语法</td>
+						<td>85k</td>
+						<td  class="col3"><a href="">我的文件</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 pic"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 pdf"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr>
+						<td class="col1 ppt"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="uploading">
+						<td class="col1 word"><i></i>高中英语语法</td>
+						<td>85k</td>
+						<td  class="col3"><a href="">我的文件</a></td>
+						<td class="status">
+							<span class="text">23%（0b/s）</span>
+							<span class="icon pause"></span>
+							<span class="icon del"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="col1 pic"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status">
+							<span class="text">已暂停</span>
+							<span class="icon start"></span>
+							<span class="icon del"></span>
+						</td>
+					</tr>
+					<tr class="fail">
+						<td class="col1 pdf"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status">
+							<span class="text">上传失败</span>
+							<span class="icon restart"></span>
+							<span class="icon del"></span>
+						</td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 word"><i></i>高中英语语法</td>
+						<td>85k</td>
+						<td  class="col3"><a href="">我的文件</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+					<tr class="complete">
+						<td class="col1 pic"><i></i>高中英语语法</td>
+						<td>1.2M</td>
+						<td  class="col3"><a href="">图片收集</a></td>
+						<td class="status"><span class="text">上传完成</span></td>
+					</tr>
+				</table>
+			</div>
+		</div> -->
+	</div>
+	<script type="text/javascript">
+		$(window).on("load",function(){
+			$(".table-wrapper").mCustomScrollbar({
+				theme:"minimal-dark"
+			});
+		});
+		$(".modal-upload table tr:gt(0)").hover(function () {
+			$(this).toggleClass('active');
+		})
+		
+    </script>
+</body>
+</html>

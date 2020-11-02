@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大智作</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/public/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/public/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/Articles/header-and-footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/books/book.css" rel="stylesheet" type="text/css">
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/jquery.promptToggle.js"></script>
+</head>
+
+<body bgcolor="#E0E0E0">
+	<div class="modal musicM">
+    	<a href="javascript:;" class="close"></a>
+        <h1>添加背景音乐</h1>
+        <div class="tab"><a href="javascript:;" class="left cur">在线音乐</a><a href="javascript:;" class="left">本地上传</a></div>
+        <div class="tabCont" style="display:none;">
+        	<div class="searchWrap">
+            	<div class="search"><input type="text" value="请输入歌名" class="colorGrey"><a href="javascript:;" class="btn left"></a></div>					            </div>
+            <div class="list">
+                	<div class="listbox">
+                    	<div class="item"><input type="checkbox" class="checkbox"><p class="left">The Lady in Red</p><span class="icon left"></span><span class="text left">时长： 02：12</span><a href="javascript:;" class="play left"></a></div>
+                        <div class="item"><input type="checkbox" class="checkbox"><p class="left">Raining In My Heart</p><span class="icon left"></span><span class="text left">时长： 02：12</span><a href="javascript:;" class="play left"></a></div>
+                        <div class="item"><input type="checkbox" class="checkbox"><p class="left">Dream Odyssey</p><span class="icon left"></span><span class="text left">时长： 02：12</span><a href="javascript:;" class="play left"></a></div>
+                        <div class="item"><input type="checkbox" class="checkbox"><p class="left">I Want It That Way -— Backstreet Boys</p><span class="icon left"></span><span class="text left">时长： 02：12</span><a href="javascript:;" class="play left"></a></div>
+                        <div class="item"><input type="checkbox" class="checkbox"><p class="left">Blue Suede Shoes -— Carl Perkins</p><span class="icon left"></span><span class="text left">时长： 02：12</span><a href="javascript:;" class="play left"></a></div>
+                    </div>
+                    <div class="allCheck"><input type="checkbox" id="all"><label for="all">全选</label></div>
+                    <div class="ss">
+                    	<div class="mpage left">
+                        	<a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="a1">上一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">1</a><span class="current">2</span><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">3</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">4</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">5</a><span>... </span><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">9</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="a1">下一页</a>
+                        </div>
+                        <a href="javascript:;" class="sure right">确认添加</a>
+                    </div>
+                </div>
+        </div>
+        <div class="tabCont" >
+        	<div class="upMusic">
+            	<p class="name">摇篮（绿色天隙--钢琴乐）</p>
+                <div class="progress clearfix">
+                	<div class="load left">
+                    	<div class="loading"></div>
+                        <span>30%</span>
+                    </div>
+                    <p>正在上传</p>
+                </div>
+            </div>
+            <p class="notice">上传过程中请不要关闭或刷新本页!</p>
+        </div>
+        <script>
+			PromptToggle($(".search input"),"请输入歌名","colorGrey")
+			//复选框相关操作
+			$(".item input").click(function(){
+				$(this).siblings("p").toggleClass("cur")
+				})
+			$(".item p").click(function(){
+				$(this).toggleClass("cur")
+				if($(this).siblings("input").prop("checked")){
+					$(this).siblings("input").prop("checked",false)
+					}
+				else
+				{$(this).siblings("input").prop("checked",true)}
+				})
+			 $(".allCheck").click(function() {
+               if($(".allCheck input").prop("checked")) {
+				   $(".list input").prop("checked",true)
+				   $(".item p").removeClass("cur")
+				    $(".item p").addClass("cur")
+				   }
+			  else{
+				  $(".list input").prop("checked",false)
+				   $(".item p").removeClass("cur")
+				  }
+            })
+			//播放按钮
+			$(".item .play").click(function(){
+				$(".item .play").removeClass("cur")
+				$(".item .icon").css("visibility","hidden")
+				$(this).addClass("cur")
+				$(this).siblings(".icon").css("visibility","visible")
+				})
+			//选项卡
+			$(".tab a").click(function(){
+				var index=$(this).index()
+				$(this).addClass("cur").siblings().removeClass("cur")
+				$(".tabCont").eq(index).show().siblings(".tabCont").hide()
+				})
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我的云资料</title>
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link rel="stylesheet" href="../css/database/database.css">
+	<link rel="stylesheet" href="../css/database/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../js/public/placeholder.js"></script>
+	<script type="text/javascript" src="../js/database/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body>
+	<div class="modal-upload">
+		<div class="modal-hd clearfix">
+			<span class="title">上传完成（4）</span>
+			<a href="javascript:;" class="zoom"></a>
+			<a href="javascript:;"></a>
+		</div>
+		<div class="modal-bd">
+			<div class="successTip">
+				有1个文件上传成功
+				<a href="javascript:;" class="close"></a>
+			</div>
+			<div class="list-wrapper">
+				<div class="list">
+					<div class="item first">
+						<div class="col1">文件名</div>
+						<div class="col2">大小</div>
+						<div class="col3">上传位置</div>
+						<div class="col4">状态</div>
+					</div>
+					<div class="item complete">
+						<div class="col1 word"><i></i>高中英语语法</div>
+						<div class="col2">85k</div>
+						<div class="col3"><a href="">我的文件</a></div>
+						<div class="col4 status"><span class="text">上传完成</span></div>
+					</div>
+					<div class="item complete">
+						<div class="col1 pic"><i></i>高中英语语法</div>
+						<div class="col2">1.2M</div>
+						<div class="col3"><a href="">图片收集</a></div>
+						<div class="status"><span class="text">上传完成</span></div>
+					</div>
+					<div class="item complete">
+						<div class="col1 pdf"><i></i>高中英语语法</div>
+						<div class="col2">1.2M</div>
+						<div class="col3"><a href="">图片收集</a></div>
+						<div class="col4 status"><span class="text">上传完成</span></div>
+					</div>
+					<div class="item complete">
+						<div class="col1 ppt"><i></i>高中英语语法</div>
+						<div class="col2">1.2M</div>
+						<div class="col3"><a href="">图片收集</a></div>
+						<div class="col4 status"><span class="text">上传完成</span></div>
+					</div>
+					<div class="item uploading">
+						<div class="col1 word">
+							<i></i>高中英语语法
+						</div>
+						<div class="col2">85k</div>
+						<div class="col3"><a href="">我的文件</a></div>
+						<div class="col4 status">
+							<span class="text">23%（0b/s）</span>
+							<span class="icon pause"></span>
+							<span class="icon del"></span>
+						</div>
+						<div  class="progress"></div>
+					</div>
+					<div class="item complete">
+						<div class="col1 pic"><i></i>高中英语语法</div>
+						<div class="col2">1.2M</div>
+						<div class="col3"><a href="">图片收集</a></div>
+						<div class="col4 status">
+							<span class="text">已暂停</span>
+							<span class="icon start"></span>
+							<span class="icon del"></span>
+						</div>
+					</div>
+					<div class="item fail">
+						<div class="col1 pdf"><i></i>高中英语语法</div>
+						<div class="col2">1.2M</div>
+						<div class="col3"><a href="">图片收集</a></div>
+						<div class="col4 status">
+							<span class="text">上传失败</span>
+							<span class="icon restart"></span>
+							<span class="icon del"></span>
+						</div>
+					</div>
+					<div class="item complete">
+						<div class="col1 word"><i></i>高中英语语法</div>
+						<div class="col2">85k</div>
+						<div class="col3"><a href="">我的文件</a></div>
+						<div class="col4 status"><span class="text">上传完成</span></div>
+					</div>
+					<div class="item complete">
+						<div class="col1 pic"><i></i>高中英语语法</div>
+						<div class="col2">1.2M</div>
+						<div class="col3"><a href="">图片收集</a></div>
+						<div class="col4 status"><span class="text">上传完成</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).on("load",function(){
+			$(".list-wrapper").mCustomScrollbar({
+				theme:"minimal-dark"
+			});
+		});
+		$(".modal-upload .list .item:gt(0)").hover(function () {
+			$(this).toggleClass('active');
+		})
+    </script>
+</body>
+</html>

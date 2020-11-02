@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子书制作</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/public/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/public/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/books/book.css" rel="stylesheet" type="text/css">
+    <link href="../css/books/make.css" rel="stylesheet" type="text/css">
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/jquery.promptToggle.js"></script>
+    <script src="../js/public/jquery.mCustomScrollbar.js"></script>
+    <script src="../js/public/super_slider.js"></script>
+</head>
+
+<body>
+	<div class="mheader">
+    	<div class="title"><div class="textWrap" ><span class="text">中国制造新名片</span><a href="javascript:;" class="edit"></a><a href="javascript:;" class="tag"></a></div><div class="inputWrap"><input type="text"><a href="javascript:;" class="sure"></a><a href="javascript:;" class="cancel"></a></div></div>
+        <div class="widget"><a href="javascript:;" class="share right"></a><a href="javascript:;" class="lock right"></a><span class="line right"></span><a href="javascript:;" class="btn view right">预览</a><a href="javascript:;" class="btn save right">保存</a><a href="javascript:;" class="znpb right">智能排版</a></div>
+    </div>
+    <div class="mContent">
+    <!--左边栏-->
+    	<div class="sideContent  picsideContent">
+        	<div class="paging">
+            	<input type="text"><span>/5</span><a href="javascript:;"></a>
+            </div>
+            <div class="cSection picSection">
+                <ul>
+                	<li class="cur">
+                    	<img src="../imagesTemp/books/pic12-1.jpg" width="181" height="122">
+                    	<p>封面</p>
+                    </li>
+                    <li>
+                    	<img src="../imagesTemp/books/pic12-2.jpg" width="181" height="122">
+                    	<p>1</p>
+                    </li>
+                    <li>
+                    	<img src="../imagesTemp/books/pic12-3.jpg" width="181" height="122">
+                    	<p>2</p>
+                    </li>
+                     <li>
+                    	<img src="../imagesTemp/books/pic12-4.jpg" width="181" height="122">
+                    	<p>3</p>
+                    </li>
+                     <li>
+                    	<img src="../imagesTemp/books/pic12-5.jpg" width="181" height="122">
+                    	<p>4</p>
+                    </li>
+
+                </ul>
+            </div>
+            
+        </div>
+     <!--内容-->
+        <div class="cMain picMain">
+        	<div class="choosePic">
+            	<div class="count left">
+                	<p class="left">我的<br>照片</p>
+                    <div class="num left">
+                    	<div class="top">总共 <strong>30</strong> 张<br>已用 <strong>15</strong> 张</div>
+                        <div class="bottom"><input type="checkbox" id="yc"><label for="yc">隐藏已使用</label></div>
+                    </div>
+                    
+                </div>
+                <a class="addPic" href="javascript:;"></a>
+                <div class="picBox">
+                	<span class="prev"></span>
+              <div>
+                <ul id="roll">
+                      <li class="click"><img  src="../imagesTemp/books/pic11.jpg" width="113" height="107"/></li>
+                      <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                      <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                      <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                    <li><img src="../imagesTemp/books/pic11.jpg" width="113" height="107" /></li>
+                </ul>
+              </div>
+              <span class="next"></span>
+                </div>
+            </div>
+        </div>
+      <!--右侧选项-->
+        <div class="sideTemplate picsideTemplate">
+        	<a href="javascript:;" class="btn"></a>           
+            <div class="tabWrap left">
+            	<div class="tab cur"><a href="javascript:;" class="single">布局</a></div>
+                <div class="tab"><a href="javascript:;" class="single">画框</a></div>
+                <div class="tab"><a href="javascript:;">内页<br>背景</a></div>
+                <div class="tab"><a href="javascript:;">主题<br>页</a></div>
+                <div class="tab"><a href="javascript:;">背景<br>音乐</a></div>
+            </div>
+            <!--布局-->
+            <div class="tabCont">
+            	<h1>布局</h1>
+                <div class="tabBox">
+                	<div class="slideWrap">
+                    	<a href="javascript:;" class="prev"></a>
+                        <a href="javascript:;" class="next"></a>
+                        <div>
+                        <ul id="roll1">
+                        	<li class="click">一图</li>
+                            <li>二图</li>
+                            <li>三图</li>
+                            <li>四图</li>
+                            <li>五图</li>
+                            <li>六图</li>
+                            <li>七图</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="showBox showBoxs  box1">
+                	<ul class="ul1">
+                    	<li class="empty"><span>空<a href="javascript:;"></a></span></li>
+                    	<li><img src="../images/books/mp_bjpic1.jpg" width="164" height="115"></li>
+                        <li><img src="../images/books/mp_bjpic2.jpg" width="164" height="115"></li>
+                        <li><img src="../images/books/mp_bjpic3.jpg" width="164" height="115"></li>
+                        <li><img src="../images/books/mp_bjpic4.jpg" width="164" height="115"></li>
+                        <li><img src="../images/books/mp_bjpic5.jpg" width="164" height="115"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--画框-->
+            <div class="tabCont">
+            	<h1>画框</h1>
+                <div class="tabBox">
+                	<div class="slideWrap">
+                    	<a href="javascript:;" class="prev"></a>
+                        <a href="javascript:;" class="next"></a>
+                        <div>
+                        <ul id="roll2">
+                        	<li class="click">一图</li>
+                            <li>二图</li>
+                            <li>三图</li>
+                            <li>四图</li>
+                            <li>五图</li>
+                            <li>六图</li>
+                            <li>七图</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="showBox showBoxs  box2">
+                	<ul class="ul2">
+                    	<li class="empty"><span>无</span></li>
+                    	<li><img src="../images/books/mp_hkpic1.png" width="155" height="100"><p>古典画框</p></li>
+                        <li><img src="../images/books/mp_hkpic1.png" width="155" height="100"><p>古典画框</p></li>
+                        <li><img src="../images/books/mp_hkpic1.png" width="155" height="100"><p>古典画框</p></li>
+                        <li><img src="../images/books/mp_hkpic1.png" width="155" height="100"><p>古典画框</p></li>
+                        <li><img src="../images/books/mp_hkpic1.png" width="155" height="100"><p>古典画框</p></li>
+                    </ul>
+                </div>
+            </div>
+            <!--内页背景-->
+            <div class="tabCont">
+            	<h1>内页背景</h1>
+                <div class="tabBox">
+                	<div class="slideWrap">
+                    	<a href="javascript:;" class="prev"></a>
+                        <a href="javascript:;" class="next"></a>
+                        <div>
+                        <ul id="roll3">
+                        	<li class="click">纯色</li>
+                            <li>简约</li>
+                            <li>鼓谱</li>
+                            <li>简约</li>
+                            <li>纯色</li>
+                            <li>古朴</li>
+                            <li>纯色</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="showBox showBoxs  box1">
+                	<ul class="ul3">
+                    	<li class="empty"><span>空<a href="javascript:;"></a></span></li>
+                    	<li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                        <li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                        <li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                        <li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                        <li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                        <li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                        <li><img src="../images/books/mp_nybjpic1.jpg" width="162" height="112"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--主题页-->
+            <div class="tabCont">
+            	<h1>主题页</h1>
+                <div class="showBox showBoxs  box3">
+                	<ul class="ul4">
+                    	<li><img src="../images/books/mp_ztypic1.jpg" width="132" height="166"></li>
+                        <li><img src="../images/books/mp_ztypic1.jpg" width="132" height="166"></li>
+                        <li><img src="../images/books/mp_ztypic1.jpg" width="132" height="166"></li>
+                        <li><img src="../images/books/mp_ztypic1.jpg" width="132" height="166"></li>
+                        <li><img src="../images/books/mp_ztypic1.jpg" width="132" height="166"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--背景音乐-->
+           <div class="tabCont" >
+            	<h1>音乐<div class="none"><input type="checkbox" id="none"><label for="none">无</label></div><a href="javascript::" class="addBtn">添加音乐</a></h1>
+                <div class="showBox box5">
+                <div class="items">
+                	<div class="title"><p>我的添加</p></div>
+                    <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                        <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                       <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>  
+                </div>
+                <div class="items">
+                	<div class="title"><p>欢快</p></div>
+                    <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                        <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                       <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>  
+                </div>
+                <div class="items">
+                	<div class="title"><p>古典</p></div>
+                    <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                        <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                       <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>  
+                </div>
+                <div class="items">
+                	<div class="title"><p>流行</p></div>
+                    <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                        <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play right"></a></p>
+                      <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>
+                       <p class="item"><span class="text left">Lemon tree</span><a href="javascript:;" class="del right"></a><a href="javascript:;" class="play playing right"></a></p>  
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+	//左侧高度
+	var height=$(window).height()
+	$(".mContent,.sideContent").height(height-60)
+	$(".cSection").height(height-130)
+	$(".picSection").height(height-89)
+	$(".picsideTemplate").height(height-190)
+	//自定义滚动条的高度设置
+	var heightR=$(".sideTemplate").height(),
+	       heightP=$(".picsideTemplate").height()
+	$(".showBox").height(heightR-49)
+	$(".showBoxs").height(heightP-75)
+	$(".tabCont").eq(0).show().siblings(".tabCont").hide(200)
+	//左侧选择
+	$(".cSection ul li").click(function(){
+		$(this).addClass("cur").siblings("").removeClass("cur")
+		})
+//标题编辑
+	$(".mheader .edit").click(function(){
+		var text =$(".mheader .text").text()
+		$(".textWrap").hide()
+		$(".inputWrap").css("display","inline-block")
+		$(".inputWrap input").val(text)
+		})
+   $(".mheader .inputWrap .cancel").click( function(){
+	   $(".inputWrap").hide()
+		$(".textWrap").css("display","inline-block")
+	   })
+	$(".mheader .inputWrap .cancel").click( function(){
+	   $(".inputWrap").hide()
+		$(".textWrap").css("display","inline-block")
+	   })
+	 $(".mheader .inputWrap .sure").click(function(){
+		 var text =$(".inputWrap input").val()
+		 $(".inputWrap").hide()
+		$(".textWrap").css("display","inline-block")
+		$(".textWrap .text").text(text)
+		 })
+  //工具栏选择
+  $(".topBox").on("click",".toolbar",function(event){
+	  $(this).addClass("click").siblings().removeClass("click")
+	  $(".subBox").hide()
+	$(this).find(".subBox").show() 
+	event.stopPropagation();
+	  })
+ $(".subBox").on("click","li",function(event){
+	 $(this).addClass("cur").siblings().removeClass("cur")
+	 event.stopPropagation();
+	 })
+ $(document).click(function(){
+	 $(".subBox").hide()
+	 })
+	 //右侧按钮控制伸缩
+	 $(".sideTemplate .btn").click(function(){
+		 $(this).parent().toggleClass("auto")
+		 })
+	 //自定义滚动条
+	 $(window).load(function(){	
+		$(".showBox").mCustomScrollbar();})	
+  //阅读背景
+  $(".ul6 li").click(function(){
+	  $(this).addClass("click").siblings().removeClass("click")
+	  })
+   $(".showBox ul li").hover(function(){
+	   $(this).children("p").slideDown(200)
+	   },
+	   function(){
+	   $(this).children("p").slideUp(200)
+	   })
+	//背景音乐
+	$(".items .item .text").click(function(){
+		$(".items .item").removeClass("click")
+		$(this).parent().addClass("click")
+				})
+   //选项卡
+   $(".tabWrap .tab").click(function(){
+	   var index=$(this).index()
+	   $(this).addClass("cur").siblings().removeClass("cur")
+	   $(".tabCont").eq(index).show(1).siblings(".tabCont").hide(1)
+	   })
+	   //图片slider
+	   	   var width=$(".choosePic").width(),
+		         length=width-478
+				 count = parseInt(length/136)
+				
+		   $(".picBox").on("click","li",function(){
+			   $(this).addClass("click").siblings().removeClass("click")
+			   })
+	    $(".picBox").superSlider({
+                          prevBtn:   ".prev",//左按钮
+                          nextBtn:   ".next",//右按钮
+                        listCont:    "#roll",//滚动列表外层
+                        scrollWhere: "prev",//自动滚动方向next
+                          delayTime:   1000,//自动轮播时间间隔
+                            speed:     500,//滚动速度
+                          amount:    1,//单次滚动数量
+                          showNum: count,//显示数量
+                          autoPlay:    false//自动播放
+                      });
+	//调整视窗大小
+	$(window).resize(function(){
+		var width=$(".choosePic").width(),
+		         length=width-478
+				 count = parseInt(length/136)
+		 $(".picBox").superSlider({
+                          prevBtn:   ".prev",//左按钮
+                          nextBtn:   ".next",//右按钮
+                        listCont:    "#roll",//滚动列表外层
+                        scrollWhere: "prev",//自动滚动方向next
+                          delayTime:   1000,//自动轮播时间间隔
+                            speed:     500,//滚动速度
+                          amount:    1,//单次滚动数量
+                          showNum: count,//显示数量
+                          autoPlay:    false//自动播放
+                      });
+		})	
+		//模板选择左右滑动
+		 $(".slideWrap").superSlider({
+                          prevBtn:   ".prev",//左按钮
+                          nextBtn:   ".next",//右按钮
+                        listCont:    "#roll1",//滚动列表外层
+                        scrollWhere: "prev",//自动滚动方向next
+                          delayTime:   1000,//自动轮播时间间隔
+                            speed:     500,//滚动速度
+                          amount:    1,//单次滚动数量
+                          showNum: 3,//显示数量
+                          autoPlay:    false//自动播放
+                      });
+		$(".slideWrap").superSlider({
+                          prevBtn:   ".prev",//左按钮
+                          nextBtn:   ".next",//右按钮
+                        listCont:    "#roll2",//滚动列表外层
+                        scrollWhere: "prev",//自动滚动方向next
+                          delayTime:   1000,//自动轮播时间间隔
+                            speed:     500,//滚动速度
+                          amount:    1,//单次滚动数量
+                          showNum: 3,//显示数量
+                          autoPlay:    false//自动播放
+                      });
+	   $(".slideWrap").superSlider({
+                          prevBtn:   ".prev",//左按钮
+                          nextBtn:   ".next",//右按钮
+                        listCont:    "#roll3",//滚动列表外层
+                        scrollWhere: "prev",//自动滚动方向next
+                          delayTime:   1000,//自动轮播时间间隔
+                            speed:     500,//滚动速度
+                          amount:    1,//单次滚动数量
+                          showNum: 3,//显示数量
+                          autoPlay:    false//自动播放
+                      });
+	   $(".slideWrap").on("click","li",function(){
+		  $(this).addClass("click").siblings().removeClass("click") 
+		   
+		   })
+    </script>
+</body>
+</html>

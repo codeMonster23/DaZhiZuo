@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>新建笔记</title>
+		<link rel="stylesheet" href="../css/public/global.css">
+		<link rel="stylesheet" href="../css/public/public.css">
+		<link rel="stylesheet" href="../css/notes/note.css">
+		<style type="text/css">
+			html,body,.container,.leftbar{
+				height: 100%;
+			}
+		</style>
+		<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	</head>
+	<body class="createNote">
+		<div class="header clearfix">
+			<div class="left logo">
+				<a href="">CNKI大智作 - 笔记</a>
+			</div>
+			<div class="right account">
+				<span class="avatar"><img src="../imagesTemp/notes/index-avatar.jpg" alt=""></span>
+				<span class="username">许馨</span>
+				<span>[ <a href="">退出</a> ]</span>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<div class="left leftbar">
+				<ul>
+					<li><a href="">本地摘记</a></li>
+					<li class="web cur"><a href="">网页摘记</a></li>
+					<li class="nb"><a href="">笔记本</a></li>
+				</ul>
+			</div>
+			<div class="left middlebar">
+				<!-- 网页摘记 -->
+				<div class="webExcerpt tc">
+					<div class="inner">
+						<h4>请输入需要导入的网址地址：</h4>
+						<input type="text">
+						<a href="" class="btn">确定</a>
+						<p>输入网址地址，轻松摘抄学习</p>
+					</div>
+				</div>
+			</div>
+			<div class="left rightbar">
+				<div class="r1 clearfix">
+					<div class="left dropdown clearfix">
+						<p>未分类</p>
+						<ul>
+							<li><a href="javascript:;">未分类</a></li>
+							<li><a href="javascript:;">笔记本</a></li>
+						</ul>
+					</div>
+					<div class="left dropdown">
+						<p>笔记本</p>
+						<ul>
+							<li><a href="javascript:;">未分类</a></li>
+							<li><a href="javascript:;">笔记本</a></li>
+						</ul>
+					</div>
+					<div class="left action clearfix">
+						<a href="" class="edit"></a>
+						<span class="tag">标签</span>
+						<span class="tag">标签</span>
+						<span class="tag">标签</span>
+						<a href="" class="add">+</a>
+					</div>
+				</div>
+				<div class="r2 clearfix">
+					<input type="text" placeholder="请输入标题">
+					<div class="right handle clearfix">
+						<a href="" class="btn">保存</a>
+						<span class="share"></span>
+						<span class="collect"></span>
+						<span class="dot dropdown">
+							<p></p>
+							<ul>
+								<li><a href="javascript:;">转移到</a></li>
+								<li><a href="javascript:;">导出为Word</a></li>
+								<li><a href="javascript:;">打印</a></li>
+								<li><a href="javascript:;">删除</a></li>
+								<li><a href="javascript:;">导出为pdf</a></li>
+								<li><a href="javascript:;">导出为htm</a></li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="editorbox"></div>
+			</div>
+		</div>
+		<script>
+			// 下拉
+			$('.dropdown p').mouseenter(function () {
+				$(this).siblings('ul').slideDown(200);
+			});
+			$('.dropdown').mouseleave(function () {
+				$(this).find('ul').slideUp(200);
+			});
+
+			// 计算右侧宽度
+			getWidth();
+			$(window).resize(function () {
+				getWidth()
+			});
+			function getWidth() {
+				var leftW=$('.leftbar').outerWidth();
+				var middleW=$('.middlebar').outerWidth();
+				var windowW=$(window).width();
+				$('.rightbar').css("width",windowW-leftW-middleW);
+			}
+
+			var windowH=$(window).height();
+			$('.createNote .container,.createNote .middlebar').css('height',windowH-60);
+
+		</script>
+	</body>
+</html>

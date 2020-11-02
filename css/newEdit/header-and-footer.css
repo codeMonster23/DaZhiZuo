@@ -1,0 +1,33 @@
+@charset "utf-8";
+.editHeader{ height:54px; background-color:#444444; min-width:1483px; padding-right:36px;}
+.editHeader .logo{ font-size:0;}
+.editHeader .info{ height:54px;font-size:14px; font-family:"微软雅黑"; background:url(../../images/newEdit/ne_icon9.gif) no-repeat right center; padding-right:22px; cursor:pointer; margin-left:28px;}
+.editHeader .info .name{ margin-left:20px;color:#ffffff; text-decoration:none; line-height:54px; }
+.editHeader .info .avatar{ margin-top:10px;}
+.editHeader .info .avatar img{ border-radius:50%;}
+.editHeader .search{ width:272px; margin-top:11px; height:30px; background-color:#262626; border-radius:4px; border-bottom:1px solid #5B5B5B;}
+.editHeader .search input{ float:left; width:221px; padding:5px; height:20px; line-height:20px; color:#ffffff; border-radius:4px;background-color:#262626; }
+.editHeader .search .btn{ width:41px; height:30px; background:url(../../images/newEdit/ne_icon10.gif) no-repeat left center;}
+.footer { background-color:#444444; color: #FFF; padding-top: 2px; min-width:1483px; }
+.footer a { color:#fff; }
+.footer .links { }
+.footer .links .linkBox { width: 206px; background-color: #575757; padding-top: 28px; padding-left: 28px; height: 142px; float: left; }
+.footer .links .linkBoxBorderRight { border-right:4px solid #444444; }
+.footer .links .linkBoxBorderRight1 { border-right:4px solid #575757; }
+.footer .links .linkBox .title { font-size: 14px; font-weight: bold; padding-bottom: 18px; }
+.footer .links .linkBox .items { width: 202px; overflow: hidden; }
+.footer .links .linkBox .items li { float: left; line-height: 24px; width: 90px; }
+.footer .links .linkBox .lbWrap { width: 206px; overflow:hidden; }
+.footer .links .linkBox .erweima { float: left; border:1px solid #dddddd; width: 71px; height:65px; border:1px solid #9a9a9a; text-align:center; line-height:71px; padding-top: 6px; /*background-image:url(../../images/header-and-footer/hf11.gif);*/ background-repeat:no-repeat; background-position:7px 6px }
+.footer .links .linkBox .about { float: left; width: 120px; line-height: 18px; padding-left: 10px; }
+.footer .links .linkBox .about p { line-height:18px; }
+.footer .links .linkBox .about .name { font-size: 16px; font-weight: bold; line-height: 30px; }
+.footer .links .linkBox .weibo { width:200px; overflow:hidden; padding-top: 15px; }
+.footer .links .linkBox .weibo .sina { background-image: url(../../images/header-and-footer/platForm8-sina.gif); background-repeat: no-repeat; background-position: left center; height: 26px; width: 74px; line-height: 33px; padding-left: 40px; }
+.footer .links .linkBox .weibo .ljgz { border:1px solid #d3d6d7; background-color:#fff; color:#666; line-height: 19px; height: 19px; width: 56px; text-align: center; margin-top: 5px; cursor: pointer; }
+.footer .links .linkBox .weibo .ljgz a { color:#666;}
+.footer .websiteInfo { padding-top: 50px; padding-bottom: 50px; position:relative; }
+.footer .websiteInfo p { text-align:left; line-height: 26px; width:660px; margin-right: auto; margin-left: auto;}
+.footer .websiteInfo p a{ color:#ffffff; text-decoration:none;}
+.footer .websiteInfo p a:hover{color:#3586cc;}
+.footer .websiteInfo .img{ position:absolute; top:63px; right:35px;}

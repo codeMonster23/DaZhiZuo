@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大智作</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/public/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/public/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/Articles/header-and-footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/books/book.css" rel="stylesheet" type="text/css">
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/jquery.promptToggle.js"></script>
+</head>
+
+<body bgcolor="#ecf0f6">
+  <div class="bgc1">	
+	<div class="header">
+			<div class="w1305pxAuto inner clearfix">
+				<div class="left logo">
+					<a href="">大智作</a>
+					<img src="../images/notes/slogan.png" alt="">
+				</div>
+				<div class="right account">
+					<span class="username">许馨</span>
+					<span>[ <a href="">退出</a> ]</span>
+				</div>
+			</div>
+		</div>
+	<div class="banner2"><img src="../images/books/book_text2.png" width="267" height="109"></div>
+	<div class="elecbook">
+	<div class="section section1">
+    	<h1>填写书名</h1>
+        <input type="text">
+    </div> 
+    <div class="section section2">
+    	<h1>选择书本尺寸</h1>
+        <p>注：选择后不可更改，请谨慎选择！</p>
+        <div class="sizeBox clearfix">
+        	<dl class="left hb click">
+            	<dt><img src="../images/books/book_pic1.jpg" width="188" height="150"></dt>
+                <dd class="shade"><img src="../images/books/book_shade2.png" width="180" height="143"></dd>
+                <dd class="text">横版</dd>
+            </dl>
+            <dl class="left sb">
+            	<dt><img src="../images/books/book_pic2.jpg" width="156" height="207"></dt>
+                <dd class="shade"><img src="../images/books/book_shade1.png" width="148" height="199"></dd>
+                <dd class="text">竖版</dd>
+            </dl>
+            <script>
+				$(".sizeBox dl").click(function(){
+					$(this).addClass("click").siblings().removeClass("click")
+				})
+            </script>
+        </div>
+    </div>
+    <div class="btns"><a href="#" class="left start">从零开始制作</a><div class="left lead">文档导入制作
+    		<ul>
+            	<li>本地上传</li>
+                <li>从我的资料库导入</li>
+                <li>从我的笔记倒入</li>
+        	</ul>
+    	</div>
+        <script>
+			$(".btns .lead").click(function(){
+				$(this).find("ul").slideToggle(200)	
+			})
+		   $(".btns .lead ul").on("click","li",function(event){
+			   $(this).addClass("click").siblings().removeClass("click")
+			   $(".lead ul").slideUp(200)
+			   event.stopPropagation();
+			   })
+        </script>
+    </div>
+</div>
+  </div>
+</body>
+</html>

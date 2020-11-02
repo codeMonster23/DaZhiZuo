@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>注册页</title>
+<link rel="stylesheet" href="../css/public/global.css">
+<link href="../css/Signin/sign.css" rel="stylesheet" type="text/css">
+<script src="../js/public/jQuery-v1.11.1.js"></script>
+<script src="../js/public/placeholder.js"></script>
+</head>
+
+<body>
+<div class="bgWrap">
+	<div class="wrap">
+    	<a href="#" class="logo1"><img src="../images/Signin/logo1.png" width="306" height="41"></a>
+        <div class="sucBox">
+        	<h1>您好，<span>Candy</span></h1>
+            <h2>恭喜你，注册成功！</h2>
+            <div class="tagBox">
+            	<p>选择您感兴趣的标签，为你个性化精选您感兴趣的内容</p>
+                <ul class="clearfix">
+                	<li class="li1">UI设计<a href="javascript:;"></a></li>
+                    <li class="li2">平面设计<a href="javascript:;"></a></li>
+                    <li class="li3">服饰/街拍/秀场<a href="javascript:;"></a></li>
+                    <li class="li4">插画<a href="javascript:;"></a></li>
+                    <li class="li5">家居/装饰<a href="javascript:;"></a></li>
+                    <li class="li6">摄影<a href="javascript:;"></a></li>
+                    <li class="li7">美女<a href="javascript:;"></a></li>
+                    <li class="li8">婚纱/婚礼<a href="javascript:;"></a></li>
+                    <li class="li9">造型/美妆<a href="javascript:;"></a></li>
+                    <li class="li10">工业设计<a href="javascript:;"></a></li>
+                    <li class="li11">手工/布艺<a href="javascript:;"></a></li>
+                    <li class="li12">美食/菜谱<a href="javascript:;"></a></li>
+                    <li class="li13">宠物<a href="javascript:;"></a></li>
+                    <li class="li14">音乐/电影/图书<a href="javascript:;"></a></li>
+                    <li class="li15">名人/明星<a href="javascript:;"></a></li>
+                    <li class="li16">动漫<a href="javascript:;"></a></li>
+                    <li class="li17">美文/美图<a href="javascript:;"></a></li>
+                    <li class="li18">旅行/攻略<a href="javascript:;"></a></li>
+                    <li class="li19">游戏<a href="javascript:;"></a></li>
+                    <li class="li20">潮品/单品<a href="javascript:;"></a></li>
+                </ul>
+            </div>
+            <a href="javascript:;" class="start">开启大智作</a>
+        </div>
+    </div>
+    <div class="footer">
+	<p>©2018《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+    <p>京ICP证040431号 网络出版服务许可证(总)网出证(京)字第271号 经营性网站备案信息 京公网安备11010802020460号</p>
+</div>
+</div>
+<script>
+//判断背景高度
+var height1=$(window).height(),
+	  height2=$(document).height()
+	  if(height1>height2){
+		  $(".bgWrap").height(height1)}
+	  else{
+		  $(".bgWrap").height(height2) 
+		  }
+//选标签
+$(".tagBox li a").click(function(){
+	$(this).toggleClass("cur")
+	})
+</script>
+</body>
+</html>

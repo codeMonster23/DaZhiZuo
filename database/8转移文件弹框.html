@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link rel="stylesheet" href="../css/database/database.css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+	<div class="mask"></div>
+	<div class="pop_add">
+		<p>将文件转移到</p>
+		<a class="close positionA" href="#"></a>
+		<div class="pop_bd">
+			<div class="maskbg"></div>
+			<div class="DynamicTree" id="tree">
+				<div class="folder">
+					<a href="javascript:void(0)"><img src="../images/database/tree-node-open-end.png"></a>
+					<img src="../images/database/tree-folder-open.png" class="folder-icon">
+					<span class="text">全部资料（102）</span>
+					<div class="section last">
+						<div class="folder">
+							<a href="javascript:void(0)"><img src="../images/database/tree-node-open.png"></a>
+							<img src="../images/database/tree-folder-open.png"  class="folder-icon">
+							<span class="text">顾城专辑（32）</span>
+							<span class="add"></span>
+							<div class="section">
+								<div class="folder">
+									<a href="javascript:void(0)"><img  src="../images/database/tree-node-open.png"></a>
+									<img  src="../images/database/tree-folder-open.png"  class="folder-icon">
+									<span class="text">诗歌</span>
+									<span class="add"></span>
+									<div class="section">
+										<div class="doc">
+											<img src="../images/database/tree-leaf.png">
+											<img src="../images/database/tree-doc.png" class="doc-icon">
+											<input type="text">
+											<a href="" class="btn">创建</a>
+											<a href="" class="btn">取消</a>
+										</div>
+										<div class="doc">
+											<img src="../images/database/tree-leaf.png">
+											<img src="../images/database/tree-doc.png" class="doc-icon">
+											<span class="text">诗歌1</span>
+											<span class="add"></span>
+										</div>
+										<div class="doc">
+											<img src="../images/database/tree-leaf.png">
+											<img src="../images/database/tree-doc.png" class="doc-icon">
+											<span class="text">诗歌2</span>
+											<span class="add"></span>
+										</div>
+										<div class="doc">
+											<img src="../images/database/tree-leaf-end.png">
+											<img src="../images/database/tree-doc.png" class="doc-icon">
+											<span class="text">诗歌3</span>
+											<span class="add"></span>
+										</div>
+									</div>
+								</div>
+								<div class="doc">
+									<img src="../images/database/tree-leaf-end.png">
+									<img src="../images/database/tree-doc.png" class="doc-icon">
+									<span  class="text">文学</span>
+									<span class="add"></span>
+								</div>
+							</div>
+						</div>
+						<div class="doc">
+							<img src="../images/database/tree-leaf.png">
+							<img src="../images/database/tree-doc.png" class="doc-icon">
+							<span class="text">备课收集（32）</span>
+							<span class="add"></span>
+						</div>
+						<div class="doc">
+							<img src="../images/database/tree-leaf.png">
+							<img src="../images/database/tree-doc.png" class="doc-icon">
+							<span id="tree-9-text" class="text">专科术语（22）</span>
+							<span class="add"></span>
+						</div>
+						<div class="doc">
+							<img src="../images/database/tree-leaf.png">
+							<img src="../images/database/tree-doc.png" class="doc-icon">
+							<span class="text">摄影展（8）</span>
+							<span class="add"></span>
+						</div>
+						<div class="doc">
+							<img src="../images/database/tree-leaf.png">
+							<img src="../images/database/tree-doc.png" class="doc-icon">
+							<span class="text">术语（9）</span>
+							<span class="add"></span>
+						</div>
+						<div class="folder">
+							<a href="javascript:void(0)"><img  src="../images/database/tree-node-open-end.png" ></a>
+							<img src="../images/database/tree-folder-open.png"  class="folder-icon">
+							<span class="text">未分类（9）</span>
+							<span class="add"></span>
+							<div class="section last">
+								<div class="doc">
+									<img src="../images/database/tree-leaf.png">
+									<img src="../images/database/tree-doc.png" class="doc-icon">
+									<input type="text">
+									<a href="" class="btn">创建</a>
+									<a href="" class="btn">取消</a>
+								</div>
+								<div class="doc">
+									<img src="../images/database/tree-leaf.png">
+									<img src="../images/database/tree-doc.png" class="doc-icon">
+									<span class="text">Node 5.1</span>
+									<span class="add"></span>
+								</div>
+								<div class="doc">
+									<img src="../images/database/tree-leaf-end.png">
+									<img src="../images/database/tree-doc.png" class="doc-icon">
+									<span class="text">Node 5.2</span>
+									<span class="add"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="createItem">
+		        	<p>新建文件夹</p>
+		            <div class="createNew"><div class="frame left positionR"><input type="text" value=""><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+		        </div>
+			</div>
+		</div>
+		<div class="pop_btn">
+			<a class="sure" href="#">确定</a>
+			<a class="cancel" href="#">取消</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// 创建树结构
+	    // var tree = new DynamicTreeBuilder("tree");
+	    // tree.init();
+ 	</script>
+</body>
+</html>

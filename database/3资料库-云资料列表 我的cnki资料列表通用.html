@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我的云资料</title>
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link rel="stylesheet" href="../css/database/database.css">
+	<link rel="stylesheet" href="../css/database/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../js/public/placeholder.js"></script>
+	<script type="text/javascript" src="../js/database/DynamicTreeBuilder.js"></script>
+	<script type="text/javascript" src="../js/database/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="w1305pxAuto inner clearfix">
+			<div class="left logo">
+				<a href="">大智作</a>
+				<img src="../images/notes/slogan.png" alt=""></div>
+			<div class="left nav">
+				<a href="" class="cur">我的</a>
+				<a href="">发现</a>
+			</div>
+			<div class="right account">
+				<span class="username">许馨</span>
+				<span>
+					[
+					<a href="">退出</a>
+					]
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="main clearfix">
+		<div class="left sidebar">
+			<div class="profile">
+				<div class="avatar">
+					<img src="../imagesTemp/notes/index-avatar.jpg" width="100" height="100" alt=""></div>
+				<div class="name tc">许欣</div>
+			</div>
+			<div class="sidenav">
+				<div class="item spec">
+					<h2>首页</h2>
+				</div>
+				<div class="item item2">
+					<h2>我的智作</h2>
+					<ul>
+						<li>
+							<a href="">我的写作</a>
+						</li>
+						<li>
+							<a href="">我的报告</a>
+						</li>
+						<li>
+							<a href="">我的成果</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item item3">
+					<h2>我的笔记</h2>
+					<ul>
+						<li>
+							<a href="">我的笔记</a>
+						</li>
+						<li>
+							<a href="">我的笔记本</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item item4">
+					<h2>资料库</h2>
+					<ul>
+						<li>
+							<a href="">查资料</a>
+						</li>
+						<li class="cur">
+							<a href="">我的云资料</a>
+						</li>
+						<li>
+							<a href="">我的cnki资料</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item item5 spec">
+					<h2>
+						<a href="">回收站</a>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="left wrap database">
+			<div class="dheader clearfix">
+				<div class="left breadcrumb">
+					<a href="#">我的云资料</a>
+					&gt; 全部资料
+				</div>
+				<div class="right searchbox clearfix">
+					<input type="text" placeholder="请输入检索关键词">
+					<a href="javascript:;" class="btn"></a>
+				</div>
+			</div>
+			<div class="dtitle clearfix">
+				<div class="left editName clearfix">
+	            	<span>全部资料</span>
+	               <!--  <div class="hidewrap"><input type="text" class="modifyInput" value="语文教学"><a href="javascript:;" class="sure">保存</a><a href="javascript:;" class="cancel">取消</a></div> -->
+	                <a href="javascript:;" class="editBtn"></a>
+	            </div>
+	            <div class="right actionBtn clearfix">
+	            	<a href="" class="link-tip"></a>
+	            	<div class="left dropdown">
+						<p>上传资料</p>
+						<ul>
+							<li><a href="javascript:;">上传文件</a></li>
+							<li><a href="javascript:;">上传文件夹</a></li>
+						</ul>
+					</div>
+	                <!-- <a href="javascript:;">上传资料</a> -->
+	                <a href="javascript:;" class="mkdir">新建文件夹</a>
+	            </div>
+            </div>
+			<div class="handle clearfix">
+				<div class="left batch clearfix">
+					<label><input type="checkbox">全选</label>
+					<a href="javascript:;" class="del">批量删除</a>
+					<a href="javascript:;" class="transfer">批量移动</a>
+				</div>
+				<div class="right filter">
+					<div class="left dropdown">
+						<p>全部资料</p>
+						<ul>
+							<li><a href="javascript:;">全部资料</a></li>
+							<li><a href="javascript:;">文档</a></li>
+							<li><a href="javascript:;">图片</a></li>
+							<li><a href="javascript:;">音频</a></li>
+							<li><a href="javascript:;">视频</a></li>
+						</ul>
+					</div>
+					<div class="left view clearfix">
+						<a href="javascript:;" class="cur"></a>
+						<a href="javascript:;" class="pic"></a>
+					</div>
+				</div>
+			</div>
+			<div class="dbody">
+				<a href="javascript:;" class="foldbtn"></a>
+				<div class="listWrap">
+					<table>
+						<tbody>
+							<tr>
+								<th width="390" class="padding">资料名称</th>
+								<th width="70">大小</th>
+								<th width="292">修改日期</th>
+								<th width="156">操作</th>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>3201k</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>10K</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name video">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+                                    <i class="icon"></i>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name audio">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name pic">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name ppt">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>3201k</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name pdf">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>10K</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name word">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name wikipedia">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>——</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>3201k</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="left name">
+										<input type="checkbox">
+										<span><a href="">舌尖上的中国</a></span>
+									</label>
+									<div  class="left inputTxt">
+										<input type="text" value="舌尖上的中国">
+										<span class="rename-icon"></span>
+										<span class="rename-icon del"></span>
+									</div>
+								</td>
+								<td>10K</td>
+								<td>2018-02-06 23:16</td>
+								<td class="operate">
+									<span class="edit"></span>
+									<span class="transfer"></span>
+									<span class="del"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="rightbar">
+					<div class="maskbg"></div>
+					<div class="DynamicTree" id="tree">
+						<div class="folder">全部资料（102）
+						    <div class="folder">顾城专辑（32）
+						        <div class="folder">诗歌
+						            <div class="doc"><a href="" title="">诗歌1</a></div>
+						            <div class="doc"><a href="" title="">诗歌2</a></div>
+						            <div class="doc"><a href="" title="">诗歌3</a></div>
+						        </div>
+						        <div class="doc"><a href="">文学</a></div>
+						    </div>
+						    <div class="doc"><a href="">备课收集（32）</a></div>
+							<div class="doc"><a href="">专科术语（22）</a></div>
+							<div class="doc"><a href="">摄影展（8）</a></div>
+							<div class="doc"><a href="">术语（9）</a></div>
+							<div class="folder">未分类（9）
+							    <div class="doc"><a href="">Node 5.1</a></div>
+							    <div class="doc"><a href="">Node 5.2</a></div>
+							</div>
+							<div class="folder">诗歌
+					            <div class="doc"><a href="" title="">诗歌1</a></div>
+					            <div class="doc"><a href="" title="">诗歌2</a></div>
+					            <div class="doc"><a href="" title="">诗歌3</a></div>
+					        </div>
+					        <div class="doc"><a href="">备课收集（32）</a></div>
+							<div class="doc"><a href="">专科术语（22）</a></div>
+							<div class="doc"><a href="">摄影展（8）</a></div>
+							<div class="doc"><a href="">术语（9）</a></div>
+							<div class="folder">诗歌
+					            <div class="doc"><a href="" title="">诗歌1</a></div>
+					            <div class="doc"><a href="" title="">诗歌2</a></div>
+					            <div class="doc"><a href="" title="">诗歌3</a></div>
+					        </div>
+					        <div class="doc"><a href="">备课收集（32）</a></div>
+							<div class="doc"><a href="">专科术语（22）</a></div>
+							<div class="doc"><a href="">摄影展（8）</a></div>
+							<div class="doc"><a href="">术语（9）</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="page tc">
+					<a href="" class="cur">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<span>...</span>
+					<a href="">下一页</a>
+					<a href="">尾页</a>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// 创建树结构
+	    var tree = new DynamicTreeBuilder("tree");
+	    tree.init();
+    </script>
+	<script>
+		$(window).on("load",function(){
+			$(".listWrap,.rightbar").mCustomScrollbar({
+				theme:"dark"
+			});
+			computeHeight();
+		});
+		// 下拉
+		$('.dropdown p').mouseenter(function () {
+			$(this).siblings('ul').slideDown(200);
+		});
+		$('.dropdown').mouseleave(function () {
+			$(this).find('ul').slideUp(200);
+		});
+
+
+		$('.database .dlist .item').hover(function () {
+			$(this).toggleClass('active');
+		});
+
+		// 左右高度自适应 
+		function computeHeight () {
+			var sHeight=$('.sidebar').height();
+			var cHeight=$('.wrap').height();
+			var arrHeight=[sHeight,cHeight];
+			var maxHeight=Math.max.apply(null,arrHeight);
+			$('.sidebar').height(maxHeight);
+			$('.wrap').height(maxHeight);  
+		}
+
+		computeHeight();
+
+		// 展开折叠
+		var k=0;
+		$('.foldbtn').click(function () {
+			if(k==0){
+				$('.listWrap').css('width','710px');
+				$('.foldbtn').addClass('active');
+				$('.wrap').css('height','auto');
+				$('.rightbar').animate({'width': '245px','right': '5px','top': '5px'},300);
+				k=1;
+			}else if(k==1){
+				$('.listWrap').css('width','960px');
+				$('.foldbtn').removeClass('active');
+				$('.wrap').css('height','auto');
+				$('.rightbar').animate({'width': 0,'right': 0,'top': 0},300);
+				k=0;
+			}
+		});
+
+		$("table tr").each(function () {
+			$(this).find(":first").css("text-align","left");
+		});
+
+		var editBtn=$('.database table .operate .edit');
+		var confirmBtn=$('.database .inputTxt span:nth-child(2)');
+		var cancelBtn=$('.database .inputTxt span:nth-child(3)');
+		editBtn.click(function () {
+			$(this).parent().siblings().find('.inputTxt').show().siblings('.name').find('a').hide();
+		});
+		confirmBtn.on('click',function () {
+			var txt=$(this).parent('.inputTxt').hide().siblings('.name');
+			var val=$.trim($(this).siblings('input').val());
+			txt.find('a').show().text(val);
+		});
+		cancelBtn.on('click',function () {
+			$(this).parent('.inputTxt').hide().siblings('.name').find('a').show();
+		})
+	</script>
+</body>
+</html>

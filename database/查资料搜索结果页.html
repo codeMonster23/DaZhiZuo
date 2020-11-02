@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>资料库</title>
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link href="../css/database/database1.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../js/public/placeholder.js"></script>
+    <script type="text/javascript" src="../js/public/divSelect.js"></script>
+    <script type="text/javascript" src="../js/public/checkboxSelectAll.js"></script>
+</head>
+<body>
+	<div class="dbHead">
+    	<a href="# " class="left"><img src="../images/database/db_logo.gif" width="263" height="60"></a>
+        <div class="account right"><span class="username">许馨</span><span>[<a href="">退出</a>]</span></div>
+    </div>
+    <div class="dbBanner">
+    	<a href="#" class="link"></a>
+    	<div class="searchWrap">
+        	<ul>
+            	<li class="left"><a href="javascript:;" class="cur">查文献<span class="icon"></span></a></li>
+                <li class="left"><a href="javascript:;">查期刊</a></li>
+                <li class="left"><a href="javascript:;">查知网书</a></li>
+                <li class="left"><a href="javascript:;">查百科</a></li>
+               	<li class="left last"><a href="javascript:;">查图片</a></li>
+            </ul>
+            <div class="searchBox">
+            	<div class="search searchc left">
+                	<div class="select select3">
+                    <p>全文</p>
+                    <ul>
+                    	<li>全文</li>
+                        <li>主题</li>
+                        <li>篇名</li>
+                        <li>关键词</li>
+                        <li>作者</li>
+                        <li>作者单位</li>
+                        <li>文献来源</li>
+                        <li>基金</li>
+                        <li class="fbsj">发表时间</li>
+                    </ul>
+                    </div>
+                	<input type="text" class="left">
+                    <div class="yearwrap left">
+                    	<i class="left">从</i>
+                        <div class="fromwrap left positionR"><p class="p from right positionR"><b>不限</b><span class="positionA"></span></p>
+                        <ul class="fromlist positionA">
+                        	<li>不限</li>
+                        </ul>
+                        </div>
+                        <i class="left">到</i>
+                        <div class="towrap left positionR"><p class="p to right positionR"><b>不限</b><span class="positionA"></span></p>
+                        <ul class="tolist positionA">
+                        	<li class="ndy">不限</li>
+                        </ul>
+                        </div>
+                        	<script>
+							$(".search .select li").click(function(){
+							$(this).parents(".select").siblings("input").css({"display":"block"})
+							$(this).parents(".select").siblings(".yearwrap").css({"display":"none"})
+							})
+							//点击发表时间
+							$(".search .fbsj").click(function(){
+							$(this).parents(".select").siblings("input").css({"display":"none"})
+							$(this).parents(".select").siblings(".yearwrap").css({"display":"block"})
+								})
+							$(".from").click(function(){
+								var start = 1900; // 指定开始年份
+								var end = new Date().getFullYear(); // 获取当前年份
+								for(i=start;i<=end;i++)
+								{$(".fromlist").append("<li>"+i+"年</li>")}
+								})
+							$(".to").click(function(){
+							var start = 1900; // 指定开始年份
+							var end = new Date().getFullYear(); // 获取当前年份
+							for(i=start;i<=end;i++)
+								{$(".tolist .ndy").after("<li>"+i+"年</li>")}}) 
+                	</script>
+                        </div>
+                    <a href="javascript:;" class="left">搜索</a>
+                </div>
+                <a href="javascript:;" class="btn left">高级搜索 ></a>
+            </div>
+        </div>
+        <p class="keywords">相关搜索： <a href="#">语文教学</a>   <a href="#">语文</a>   <a href="#">语文与人文</a>    <a href="#">语文教育</a></p>
+    </div>
+    <div class="bgWrap">
+    <div class="contWrap rcontWrap">
+            <div class="showBox">
+            	<div class="handle">
+                	<div class="check left"><input  type="checkbox" id="all"><label for="all">全选</label></div>
+                    <a href="javascript:;" class="left pladd">批量添加到资料库</a>
+                    <div class="select select2 left">
+                    	<p>按相关度排序</p>
+                        	<ul>
+                            	<li>按相关度排序</li>
+                                <li>按发表时间排序</li>
+                                <li>按下载次数排序</li>
+                                <li>按被引次数排序</li>
+                            </ul>
+                    </div>
+                    <div class="sxBtn left">
+                    	<p>筛选</p>
+                    </div>
+                    <div class="right icons">
+                    	<a href="javascript:;" class="xq right"></a>
+                        <a href="javascript:;" class="lb cur right"></a>
+                    </div>
+                    <div class="num right">相关文献 <strong>7707</strong> 篇</div>
+                </div>
+                <!--筛选-->
+                <div class="sxSection">
+                <div class="filtrate ie67bug">
+    			  <div  class="itemm">
+      	<span class="see1">文献类型</span>
+        <span class="see2" style="position:absolute;z-index:30; left:-15px; top:0px; padding-left:33px; padding-right:30px; width:62px; height:38px; line-height:38px; background-color:#ED8826;"><i >文献类型</i></span>
+      </div>
+      			  <div class="line1"></div>
+    			  <div  class="itemm">
+      	<span class="see1">学科分类</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:22px; width:62px; height:38px; line-height:38px; background-color:#ED8826;"><i >学科分类</i></span>
+      </div>
+     		      <div class="line1"></div>
+      			  <div  class="itemm">
+      	<span class="see1">发表年度</span>
+         <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:22px; width:62px; height:38px; line-height:38px;  background-color:#ED8826;"><i >发表年度</i></span>
+      </div>
+      			 <div class="line1"></div>
+                 <div  class="itemm spec">
+                        <span class="see1">作者</span>
+                        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:40px; padding-right:30px; width:36px; height:38px; line-height:38px;  background-color:#ED8826;"><i >作者</i></span>
+               </div>
+      			<div class="line1"></div>
+      			<div  class="itemm spec">
+      				<span class="see1">机构</span>
+        			<span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:40px; padding-right:30px; width:36px; height:38px; line-height:38px; background-color:#ED8826;"><i >机构</i></span>
+      </div>
+      			<div class="line1"></div>
+      			<div  class="itemm spec">
+      				<span class="see1">基金</span>
+        			<span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:40px; padding-right:30px; width:36px; height:38px; line-height:38px;background-color:#ED8826;"><i >基金</i></span>
+     		 </div>
+      			<div class="line1"></div>
+      			<div  class="itemm">
+      				<span class="see1">研究层次</span>
+        			<span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:22px; width:62px; height:38px; line-height:38px;background-color:#ED8826;"><i >研究层次</i></span>
+      			</div>
+      			<div class="line1"></div>
+      			<div  class="itemm">
+      			<span class="see1">文献来源</span>
+         		<span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:21px; width:60px; height:38px; line-height:38px;background-color:#ED8826;"><i >文献来源</i></span>
+      </div>
+      		</div>
+                <div class="pop2 clearfix">
+                    <!--<a class="close1 positionA" href="javascript:void(0)"></a>-->
+                    <div class="classes">
+                <span class="wrapT"><a href="javascript:void(0)">全部</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+            </div>
+            <div class="classes">
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">中国社会科学院语言文字应用研究所</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(128)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+            </div>
+            <div class="classes">
+                <span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">	
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(1458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(128)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(1458)</span>
+            </div>
+            <div class="classes">
+                
+                <span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+            </div>
+            
+          </div>
+          		</div>
+      			<!--列表-->
+                <table>
+                	<tbody>
+                    	<tr>
+                        	<th class="t1">序号</th>
+                            <th class="t2">篇名</th>
+                            <th class="t3">作者</th>
+                            <th class="t4">来源</th>
+                            <th class="t5">发布时间</th>
+                            <th class="t6">下载</th>
+                            <th class="t7">被引</th>
+                            <th class="last">操作</th>
+                        </tr>
+                        <tr class="bd">
+                        		<td><input type="checkbox"> <label>01</label></td>
+                            	<td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索—探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市—以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索——以潍坊市探索以潍坊市探索以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            	<td>颜士全</td>
+                            	<td><div>中国企业家</div></td>
+                            	<td>2018-01-02</td>
+                            	<td>1234</td>
+                           	 	<td>1234</td>
+                            	<td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>02</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>03</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家中国企业家中国企业家中国企业家中国企业家中国企业家中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>04</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>05</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>06</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>07</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>08</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>09</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>10</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>11</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>12</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>13</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>14</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>15</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>16</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>17</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>18</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>19</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                        <tr class="bd">
+                        	<td><input type="checkbox"> <label>20</label></td>
+                            <td><div><a href="#" class="title">初中<span>语文</span>“三四五”课堂教学探索——以潍坊市</a><a href="javascript:;" class="a1"></a><a href="javascript:;" class="a2"></a></div></td>
+                            <td>颜士全</td>
+                            <td><div>中国企业家</div></td>
+                            <td>2018-01-02</td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td><a href="javascript:;" class="a3"></a><a href="javascript:;" class="a4"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page myPage"> <a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="spec_padding ">首页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" >上一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">01</a><span class="current">02</span><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">03</a><a href="?page=4&amp;type=ch&amp;keys=sdfsd&amp;sort=0">04</a><a href="?page=5&amp;type=ch&amp;keys=sdfsd&amp;sort=0">05</a><a href="?page=6&amp;type=ch&amp;keys=sdfsd&amp;sort=0">06</a><a href="?page=7&amp;type=ch&amp;keys=sdfsd&amp;sort=0">07</a><span>...</span><a href="?page=37&amp;type=ch&amp;keys=sdfsd&amp;sort=0">37</a><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">下一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="spec_padding">末页</a> </div>
+    </div>
+
+    <div class="dbFooter">
+    	<p>©2018《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+        <p>京ICP证040431号 网络出版服务许可证 (总)网出证(京)字第 271 号 经营性网站备案信息 京公网安备 11010802020460 号</p>
+    </div>
+        </div>
+    <!--side-->
+    <div class="sideCol">
+    	<a href="javascript:;" class="toggle"></a>
+    	<div class="sideWrap">
+        	<a href="#" class="a1">笔记</a>
+            <a href="#" class="a2">摘记</a>
+            <a href="#" class="a3">资料库</a>
+        </div>
+    </div>
+    <script>
+	//收起展开
+	$(".sideCol .toggle").click(function(){
+		$(".sideCol .sideWrap").toggleClass("fold")
+		})
+	//下拉
+	$(function(){
+    $.divselect($(".select p"),$(".select ul"),$(".select ul li"));
+});
+//日期选择
+	$(".yearwrap .p").click(function(e){
+		$(".yearwrap ul").hide();
+        if($(this).siblings("ul").css("display")=="none"){
+           $(this).siblings("ul").slideDown("fast");
+        }else{
+            $(this).siblings("ul").slideUp("fast");
+        }
+		e.stopPropagation();
+    });
+	$(".yearwrap ul").on("click","li",function(){
+        var txt = $(this).text();
+        $(this).parent().siblings(".p").find("b").html(txt);
+        $(".yearwrap ul").hide();
+    });
+		$(document).click(function(){
+		 $(".yearwrap ul").hide();
+	});
+//checkbox
+	$("table label").click(function(){
+		var input=$(this).prev()
+		if(input.prop("checked")){
+			input.prop("checked",false)
+		}
+		else{
+		input.prop("checked",true)	
+			}
+		})
+    selectAll($(".check input"),$("table input"))
+	//隔行变色
+	$("table tr:even td").css("background-color","#F2F7FB")
+	$("table .bd").hover(function(){
+		$(this).prev().css("border-bottom-color","#E4CBBF")
+		$(this).next().css("border-top-color","#E4CBBF")
+		},function(){
+		$(this).prev().css("border-bottom-color","#ffffff")
+		$(this).next().css("border-top-color","#ffffff")
+		})
+		//筛选
+		$(".sxBtn").click(function(){
+			$(this).toggleClass("toggle")
+			$(".sxSection").slideToggle(200)	
+		    setTimeout(function(){var height=Math.max($("html, body").height(),$(window).height());$(".sideCol, .sideWrap").height(height-60)}, 300)	
+			})
+		$(".pop2 .classes").each(function(){
+		$(this).parents(".sxSection").css("display","block")	
+		var Width=$(this).children(".wrapT").width()
+		var Html=$(this).children(".wrapT").children("a").html()
+		$(this).children(".wrapT").children(".hint").children("b").width(Width+200)
+		$(this).children(".wrapT").children(".hint ").children("b").html("点击显示"+'"'+Html+'"'+"的筛选结果")
+		$(this).children(".wrapT").children(".hint ").css({"left":"50%","margin-left":-(Width+200)/2})
+		if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+		$(this).children(".wrapT").children(".hint ").css({"left":"50%","margin-left":-((Width+200)/2+15)})
+		} 
+		$(this).children(".wrapT").children(".hint ").children("i").css({"left":"50%","margin-left":"-3px"})
+	    $(this).parents(".sxSection").css("display","none")
+		})	
+		$(".filtrate .itemm").click(
+    	function(){
+			$(".filtrate .itemm .see2").css({"display":"none"})
+        	$(this).children(".see2").css({"display":"block"})
+			$(".pop2").css({"display":"block"})
+			$(".filtrate").addClass("ie67bug")
+        })
+		$(".pop2 .classes a").click(
+			function(){
+			$(".pop2 .classes a").removeClass("soil")
+		     $(this).addClass("soil")
+		})
+			$(".pop2 .unfold").click(
+				function(){
+					$(this).siblings(".hide").show()
+					$(this).hide()
+					})
+			$(".pop2 .fold").click(
+				function(){
+					$(this).parent(".hide").hide()
+					$(".pop2 .unfold").show()
+					})
+			
+			$(".classes a").hover(
+			function(){
+				$(this).siblings(".hint").show()
+				$(this).addClass("ie67sick")},
+				function(){
+				$(this).siblings(".hint").hide()
+				$(this).removeClass("ie67sick")}
+			)
+			$(".pop2 .close1").click(
+				function(){
+				$(".pop2").css({"display":"none"})
+				$(".pop2 .hide").css({"display":"none"})	
+				$(".pop2 .unfold").css({"display":"block"})	
+				$(".filtrate .itemm .see2").css({"display":"none"})	
+				$(".filtrate").removeClass("ie67bug")
+					})
+	 //sidecol高度
+	var height=Math.max($("html, body").height(),$(window).height())
+	$(".sideCol, .sideWrap").height(height-60)
+    </script>
+</body>
+</html>

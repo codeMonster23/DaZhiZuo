@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我的云资料</title>
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link rel="stylesheet" href="../css/database/database.css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../js/public/placeholder.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="w1305pxAuto inner clearfix">
+			<div class="left logo">
+				<a href="">大智作</a>
+				<img src="../images/notes/slogan.png" alt=""></div>
+			<div class="left nav">
+				<a href="" class="cur">我的</a>
+				<a href="">发现</a>
+			</div>
+			<div class="right account">
+				<span class="username">许馨</span>
+				<span>
+					[
+					<a href="">退出</a>
+					]
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="main clearfix">
+		<div class="left sidebar">
+			<div class="profile">
+				<div class="avatar">
+					<img src="../imagesTemp/notes/index-avatar.jpg" width="100" height="100" alt=""></div>
+				<div class="name tc">许欣</div>
+			</div>
+			<div class="sidenav">
+				<div class="item spec">
+					<h2>首页</h2>
+				</div>
+				<div class="item item2">
+					<h2>我的智作</h2>
+					<ul>
+						<li>
+							<a href="">我的写作</a>
+						</li>
+						<li>
+							<a href="">我的报告</a>
+						</li>
+						<li>
+							<a href="">我的成果</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item item3">
+					<h2>我的笔记</h2>
+					<ul>
+						<li>
+							<a href="">我的笔记</a>
+						</li>
+						<li>
+							<a href="">我的笔记本</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item item4">
+					<h2>资料库</h2>
+					<ul>
+						<li>
+							<a href="">查资料</a>
+						</li>
+						<li class="cur">
+							<a href="">我的云资料</a>
+						</li>
+						<li>
+							<a href="">我的cnki资料</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item item5 spec">
+					<h2>
+						<a href="">回收站</a>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="left wrap database">
+			<div class="dheader clearfix">
+				<div class="left breadcrumb">
+					<a href="#">我的云资料</a>&gt;<a href="#">全部资料</a>&gt;搜索“高中英语语法”
+				</div>
+				<div class="right searchbox clearfix">
+					<input type="text" placeholder="请输入检索关键词">
+					<a href="javascript:;" class="btn"></a>
+				</div>
+			</div>
+			<div class="dtitle clearfix">
+				<div class="left editName clearfix">
+	            	<span>全部资料</span>
+	                <a href="javascript:;" class="editBtn"></a>
+	            </div>
+	            <div class="right actionBtn clearfix">
+	            	<a href="" class="link-tip"></a>
+	               	<div class="left dropdown">
+						<p>上传资料</p>
+						<ul>
+							<li><a href="javascript:;">上传文件</a></li>
+							<li><a href="javascript:;">上传文件夹</a></li>
+						</ul>
+					</div>
+	                <a href="javascript:;" class="mkdir">新建文件夹</a>
+	            </div>
+            </div>
+			<div class="handle clearfix">
+				<div class="left batch clearfix">
+					<label><input type="checkbox">全选</label>
+					<a href="javascript:;" class="del">批量删除</a>
+					<a href="javascript:;" class="transfer">批量移动</a>
+				</div>
+				<div class="right filter">
+					<div class="left dropdown">
+						<p>全部资料</p>
+						<ul>
+							<li><a href="javascript:;">全部资料</a></li>
+							<li><a href="javascript:;">文档</a></li>
+							<li><a href="javascript:;">图片</a></li>
+							<li><a href="javascript:;">音频</a></li>
+							<li><a href="javascript:;">视频</a></li>
+						</ul>
+					</div>
+					<div class="left view clearfix">
+						<a href="javascript:;" class="cur"></a>
+						<a href="javascript:;" class="pic"></a>
+					</div>
+				</div>
+			</div>
+			<div class="dbody blank">
+				<img src="../images/database/icon17.jpg" alt="">
+				<p>没有找到相关资料</p>
+				<a href="" class="btn">我要上传</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		// 左右高度自适应 
+		var sHeight=$('.sidebar').height();
+		var cHeight=$('.wrap').height();
+		var arrHeight=[sHeight,cHeight];
+		var maxHeight=Math.max.apply(null,arrHeight);
+		$('.sidebar').height(maxHeight);
+		$('.wrap').height(maxHeight);
+
+		// 下拉
+		$('.dropdown p').mouseenter(function () {
+			$(this).siblings('ul').slideDown(200);
+		});
+		$('.dropdown').mouseleave(function () {
+			$(this).find('ul').slideUp(200);
+		});
+	</script>
+</body>
+</html>

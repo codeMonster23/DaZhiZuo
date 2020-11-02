@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+/*skin modal*/
+.skin01{ background-color:#BFE7E7; background-image:url(../../images/Articles/ne_skin1.jpg);}
+.skin02{ background-color:#99ECE4; background-image:url(../../images/Articles/ne_skin2.jpg);}
+.skin03{ background-color:#F0E8E2; background-image:url(../../images/Articles/ne_skin3.jpg);}
+.skin04{ background-color:#FED971; background-image:url(../../images/Articles/ne_skin4.jpg);}
+.skin05{ background-color:#CEEFD2; background-image:url(../../images/Articles/ne_skin5.jpg);}
+.skin06{ background-color:#E4DDB2; background-image:url(../../images/Articles/ne_skin6.jpg);}
+.skin07{ background-color:#BCA891; background-image:url(../../images/Articles/ne_skin7.jpg);}
+.skin09{ background-color:#70C6E9; background-image:url(../../images/Articles/ne_skin9.jpg);}
+.skin10{ background-color:#001027; background-image:url(../../images/Articles/ne_skin010.jpg);}
+.skin11{background-image:url(../../images/Articles/ne_skin011.jpg);}
+.skin12{ background-image:url(../../images/Articles/ne_skin012.jpg);}
+.skin13{ background-color:#B4E089; background-image:url(../../images/Articles/ne_skin013.jpg);}
+/*编辑预览页面*/
+.changeBg{min-width:1190px; padding-bottom:1px; background-repeat:no-repeat; background-attachment:fixed;background-position:center top;}
+.changeBg .mainBox{ width:1074px; padding-top:90px; margin:0 auto 134px;}
+.changeBg .mainBox .site{ line-height:38px;}
+.changeBg .mainBox .content{ padding:17px; border-radius:10px;}
+.changeBg .mainBox .content .preview{ padding:15px 38px 30px; min-height:300px;_height:300px; position:relative;border-radius:10px;}
+.changeBg .mainBox .content .preview .headline{ margin-bottom:45px; padding-top:10px;}
+.changeBg .mainBox .content .preview .headline .name{ text-align:center; line-height:76px; font-family:"微软雅黑"; font-size:30px; }
+.changeBg .mainBox .content .preview .headline .info{ height:24px; text-align:center;}
+.changeBg .mainBox .content .preview .headline .info a{ display:inline-block;font-weight:bold; margin-right:20px; font-size:14px; text-decoration:none; height:24px; line-height:24px;}
+.changeBg .mainBox .content .preview .headline .info a img{ display:inline-block;border-radius:50%; margin-right:5px; vertical-align:middle;}
+.changeBg .mainBox .content .preview .headline .info a label{ vertical-align:middle; cursor:pointer;}
+.changeBg .mainBox .content .preview .headline .info a.vip label{ padding-right:20px; background: url(../../images/Articles/article-vip.png) no-repeat right center;}
+.changeBg .mainBox .content .preview .headline .info .date{ display:inline-block; line-height:24px;}
+.changeBg .mainBox .content .preview .paragraph{ position:relative;}
+/*.changeBg .mainBox .content .preview .paragraph p{ font-size:16px; text-indent:32px; line-height:30px;margin-bottom:30px;}
+.changeBg .mainBox .content .preview .paragraph .img{ margin:-10px auto 20px; text-align:center;}
+.changeBg .mainBox .content .preview .paragraph .img p{ font-size:12px; line-height:34px; margin-bottom:0;}*/
+.changeBg .mainBox .content .preview .paragraph p{font-size:16px;line-height:25px;padding-top:10px;}
+.changeBg .mainBox .content .preview .paragraph .pagebreak{display:block;clear:both !important;cursor:default !important;width: 100% !important;padding-top:12px;background:url("../../images/personalHomepage/ph-jt-divide.png") no-repeat center;height:16px; border:none 0}
+.changeBg .mainBox .content .preview .paragraph img{ margin:0px auto 10px; text-align:center;}
+.changeBg .mainBox .content .preview .paragraph .jb{line-height:30px;margin-top:40px; font-size:16px; padding-left:30px;}
+.changeBg .mainBox .content .preview .paragraph .keyword{ line-height:16px; text-align:right; /*margin-bottom:5px; */margin-top:50px; font-size:14px;}
+.changeBg .mainBox .content .preview .paragraph .editor{ line-height:16px;/* text-align:right;*/margin-top:50px;}
+.fixFoot{ position:fixed; bottom:0; height:65px; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');width:100%;}
+:root .fixFoot{filter:none;background-color:rgba(0,0,0,0.5);} 
+.fixFoot .case{ width:516px; padding-top:10px; margin:0 auto; text-align:center;}
+.fixFoot .case a{ display:inline-block; *display:inline; *zoom:1;width:190px; height:45px; line-height:45px; text-align:center;font-family:"微软雅黑"; font-size:16px; border-radius:3px; text-decoration:none; }
+.fixFoot .case .edit{ background-color:#F27828; color:#ffffff; margin-right:130px;}
+.fixFoot .case .close{ background-color:#ffffff; color:#F27828;}
+.toolsfix{ position:fixed; left:50%; margin-left:550px; bottom:76px; width:62px; height:200px;}
+.toolsfix a{ position:absolute; width:45px; height:45px; background-repeat:no-repeat; background-position:center; background-color:#646464;}
+.toolsfix .scrolltop{ display:none;top:0; background-image:url(../../images/Articles/yl-tools-icon1.png);}
+.toolsfix .share{ top:52px; background-image:url(../../images/Articles/yl-tools-icon2.png);}
+.toolsfix .collect{top:104px; background-image:url(../../images/Articles/yl-tools-icon3.png);}
+.toolsfix .zan{ bottom:0; background-image: url(../../images/Articles/yl-tools-icon4.png);}
+.toolsfix a:hover{ background-color:#F6910D;}
+/*模板样式*/
+/*第1套（默认）*/
+.skin01 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin01 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin01 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4CFFFFFF', endColorstr='#4CFFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.6);}
+:root .skin01 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.3);}
+.skin01 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin01 .mainBox .content .preview .headline .info{ color:#B2B2B2;}
+.skin01 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin01 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin01 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin01 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin01 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin01 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin01 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin01 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin01 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin01 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin01 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin01 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第2套*/
+.skin02 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin02 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin02 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin02 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin02 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin02 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin02 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin02 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin02 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin02 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin02 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin02 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin02 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin02 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin02 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin02 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin02 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin02 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第3套*/
+.skin03 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin03 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin03 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin03 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin03 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin03 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin03 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin03 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin03 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin03 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin03 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin03 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin03 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin03 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin03 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin03 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin03 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin03 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第4套*/
+.skin04 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin04 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin04 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin04 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin04 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin04 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin04 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin04 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin04 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin04 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin04 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin04 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin04 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin04 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin04 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin04 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin04 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin04 .mainBox .content .preview .related a{ color:#0A83D8;}
+
+/*第5套*/
+.skin05 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin05 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin05 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin05 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin05 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin05 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin05 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin05 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin05 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin05 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin05 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin05 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin05 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin05 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin05 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin05 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin05 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin05 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第6套*/
+.skin06 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin06 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin06 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin06 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin06 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin06 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin06 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin06 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin06 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin06 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin06 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin06 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin06 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin06 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin06 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin06 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin06 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin06 .mainBox .content .preview .related a{ color:#0A83D8;}
+
+/*第7套*/
+.skin07 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin07 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin07 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin07 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin07 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin07 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin07 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin07 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin07 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin07 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin07 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin07 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin07 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin07 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin07 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin07 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin07 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin07 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第9套*/
+.skin09 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin09 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin09 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin09 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin09 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin09 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin09 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin09 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin09 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin09 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin09 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin09 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin09 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin09 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin09 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin09 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin09 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin09 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第10套*/
+.skin10 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin10 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin10 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin10 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin10 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin10 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin10 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin10 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin10 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin10 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin10 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin10 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin10 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin10 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin10 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin10 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin10 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin10 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第11套*/
+.skin11 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin11 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin11 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin11 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin11 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin11 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin11 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin11 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin11 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin11 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin11 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin11 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin11 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin11 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin11 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin11 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin11 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin11 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第12套*/
+.skin12 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin12 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin12 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin12 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin12 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin12 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin12 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin12 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin12 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin12 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin12 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin12 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin12 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin12 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin12 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin12 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin12 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin12 .mainBox .content .preview .related a{ color:#0A83D8;}
+/*第13套*/
+.skin13 .mainBox .content{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');}
+:root .skin13 .mainBox .content{filter:none;background-color:rgba(255,255,255,0.5);}
+.skin13 .mainBox .content .preview{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');box-shadow:0 0 3px 3px rgba(255,255,255,0.8);}
+:root .skin13 .mainBox .content .preview {ilter:none;background-color:rgba(255,255,255,0.2);}
+.skin13 .mainBox .content .preview .headline .name{ color:#a2582b;}
+.skin13 .mainBox .content .preview .headline .info{ color:#262626;}
+.skin13 .mainBox .content .preview .headline .info a{ color:#3F3F3F;}
+.skin13 .mainBox .content .preview .paragraph p{ color:#3F3F3F;}
+.skin13 .mainBox .content .preview .paragraph .img p{ color:#3F3F3F;}
+.skin13 .mainBox .content .preview .paragraph .jb{ background:url(../../images/Articles/article-jb.png) no-repeat left center; color:#FF713C;}
+.skin13 .mainBox .content .preview .paragraph .keyword{color:#ff723b;}
+.skin13 .mainBox .content .preview .paragraph .keyword span{ color:#A5A5A5;}
+.skin13 .mainBox .content .preview .paragraph .keyword a{color:#ff723b; text-decoration:none;}
+.skin13 .mainBox .content .preview .paragraph .editor{ color:#424242;}
+.skin13 .mainBox .content .preview .paragraph .editor span{ color:#0A83D8;}
+.skin13 .mainBox .content .preview .tools{ color:#F08D0C; }
+.skin13 .mainBox .content .preview .tools td .bd{border-color:#E8E8E8;}
+.skin13 .mainBox .content .preview .related a{ color:#0A83D8;}

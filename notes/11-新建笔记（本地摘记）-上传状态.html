@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>新建笔记</title>
+		<link rel="stylesheet" href="../css/public/global.css">
+		<link rel="stylesheet" href="../css/public/public.css">
+		<link rel="stylesheet" href="../css/notes/note.css">
+		<style type="text/css">
+			html,body,.container,.leftbar{
+				height: 100%;
+			}
+		</style>
+		<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	</head>
+	<body>
+		<div class="createNote">
+			<div class="header clearfix">
+				<div class="left logo">
+					<a href="">CNKI大智作 - 笔记</a>
+				</div>
+				<div class="right account">
+					<span class="avatar"><img src="../imagesTemp/notes/index-avatar.jpg" alt=""></span>
+					<span class="username">许馨</span>
+					<span>[ <a href="">退出</a> ]</span>
+				</div>
+			</div>
+			<div class="container clearfix">
+				<div class="left leftbar">
+					<ul>
+						<li class="web cur"><a href="javascript:;">本地摘记</a></li>
+						<li class="web"><a href="javascript:;">网页摘记</a></li>
+						<li class="nb"><a href="javascript:;">笔记本</a></li>
+					</ul>
+				</div>
+				<div class="left middlebar">
+					<!-- 本地摘记 -->
+					<div class="localExcerpt con">
+	<!-- 					<div class="panel-hd tc">
+							<span class="cur">本地上传</span>
+							<span>素材库导入</span>
+						</div> -->
+						<div class="panel-bd">
+							<!-- 本地上传 -->
+							<div class="uploading tc">
+								<div class="tab-nav">
+									<span class="cur">文档</span>
+									<span>图片</span>
+									<span>音频</span>
+									<span>视频</span>
+								</div>
+								<div class="tab-content">
+									<div class="cont cur">
+										<img src="../images/notes/doc.png" alt="">
+										<div class="status">
+											<div class="title">正在上传...</div>
+											<h4>年终总结--最终版.doc</h4>
+											<div class="progress"><span>60%</span></div>
+											<a href="" class="uploadBtn">取消上传</a>
+										</div>
+										<div class="status">
+											<div class="title">上传失败！</div>
+											<a href="" class="uploadBtn">重新上传</a>
+										</div>
+									</div>
+									<div class="cont">
+										<img src="../images/notes/pic.png" alt="">
+										<a href="" class="btn">请选择要上传的图片</a>
+										<h4>上传图片，方便摘抄学习</h4>
+										<p>上传须知：</p>
+										<p>支持格式jpg、png、gif，文件<br>大小不超过10M</p>
+									</div>
+									<div class="cont">
+										<img src="../images/notes/audio.png" alt="">
+										<a href="" class="btn">请选择要上传的音频</a>
+										<h4>上传音频，方便摘抄学习</h4>
+										<p>上传须知：</p>
+										<p>文件不得超过2GB，支持的<br>格式包括：mp3、wav</p>
+									</div>
+									<div class="cont">
+										<img src="../images/notes/video.png" alt="">
+										<a href="" class="btn">请选择要上传的视频</a>
+										<h4>上传视频，方便摘抄学习</h4>
+										<p>上传须知：</p>
+										<p>支持格式包括：rmvb、mpeg、<br>mov、wmv、avi、mkv、mp4、<br>flv、vob、f4v</p>
+									</div>
+								</div>
+							</div>
+							<!-- 素材库导入 -->
+							<div class="importing">	
+								<div class="searchField">
+									<div class="searchbox clearfix">
+										<div class="left search clearfix">
+											<input type="text" placeholder="请输入关键字">
+											<div class="left dropdown">
+												<p>全部</p>
+												<ul>
+													<li><a href="javascript:;">原创素材库</a></li>
+													<li><a href="javascript:;">CNKI素材库</a></li>
+												</ul>
+											</div>
+										</div>
+										<input type="button" class="left searchBtn">
+									</div>
+								</div>
+								<div class="tab-nav">
+									<span class="cur">CNKI素材</span>
+									<span>文档</span>
+									<span>图片</span>
+									<span>音频</span>
+									<span>视频</span>
+								</div>
+								<div class="tab-content">
+									<div class="cont cur">
+										<div class="breadcrumb"><a href="">全部</a>&gt;<a href="">幼儿教育</a></div>
+										<ul class="list">
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+										</ul>
+										<div class="page tc">
+											<a href="">&lt;</a>
+											<a href="" class="cur">1</a>
+											<a href="">2</a>
+											<a href="">3</a>
+											<a href="">4</a>
+											<a href="">5</a>
+											<span>...</span>
+											<a href="">120</a>
+											<a href="">&gt;</a>
+										</div>
+									</div>
+									<div class="cont">
+										<ul class="list">
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+										</ul>
+									</div>
+									<div class="cont">
+										<div class="breadcrumb"><a href="">全部</a>&gt;<a href="">图片</a></div>
+										<ul class="list picList tc">
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+											</li>
+										</ul>
+										<div class="page tc">
+											<a href="">&lt;</a>
+											<a href="" class="cur">1</a>
+											<a href="">2</a>
+											<a href="">3</a>
+											<a href="">4</a>
+											<a href="">5</a>
+											<span>...</span>
+											<a href="">120</a>
+											<a href="">&gt;</a>
+										</div>
+									</div>
+									<div class="cont">
+										<div class="breadcrumb"><a href="">全部</a>&gt;<a href="">音频</a></div>
+										<ul class="list">
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+											<li><a href="">·&nbsp;探索幼儿教育生活化的策略研究</a></li>
+										</ul>
+										<div class="page tc">
+											<a href="">&lt;</a>
+											<a href="" class="cur">1</a>
+											<a href="">2</a>
+											<a href="">3</a>
+											<a href="">4</a>
+											<a href="">5</a>
+											<span>...</span>
+											<a href="">120</a>
+											<a href="">&gt;</a>
+										</div>
+									</div>
+									<div class="cont">
+										<div class="breadcrumb"><a href="">全部</a>&gt;<a href="">视频</a></div>
+										<ul class="list picList tc">
+											<li>
+												<a href=""><a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+											<li>
+												<a href=""><img src="../imagesTemp/notes/mynote-img.jpg" alt="" width="115" height="83"></a>
+												<p>R410机组设计全面R410机组设计全面</p>
+												<i></i>
+											</li>
+										</ul>
+										<div class="page tc">
+											<a href="">&lt;</a>
+											<a href="" class="cur">1</a>
+											<a href="">2</a>
+											<a href="">3</a>
+											<a href="">4</a>
+											<a href="">5</a>
+											<span>...</span>
+											<a href="">120</a>
+											<a href="">&gt;</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 网页摘记 -->
+					<div class="webExcerpt con tc">
+						<h4>请输入需要导入的网址地址：</h4>
+						<input type="text">
+						<a href="" class="btn">确定</a>
+						<p>输入网址地址，轻松摘抄学习</p>
+					</div>
+				</div>
+				<div class="left rightbar">
+					<div class="r1 clearfix">
+						<div class="left dropdown clearfix">
+							<p>未分类</p>
+							<ul>
+								<li><a href="javascript:;">未分类</a></li>
+								<li><a href="javascript:;">笔记本</a></li>
+							</ul>
+						</div>
+						<div class="left dropdown">
+							<p>笔记本</p>
+							<ul>
+								<li><a href="javascript:;">未分类</a></li>
+								<li><a href="javascript:;">笔记本</a></li>
+							</ul>
+						</div>
+						<div class="left action clearfix">
+							<a href="" class="edit"></a>
+							<span class="tag">标签</span>
+							<span class="tag">标签</span>
+							<span class="tag">标签</span>
+							<a href="" class="add">+</a>
+						</div>
+					</div>
+					<div class="r2 clearfix">
+						<input type="text" placeholder="请输入标题">
+						<div class="right handle clearfix">
+							<a href="" class="btn">保存</a>
+							<span class="share"></span>
+							<span class="collect"></span>
+							<span class="dot dropdown">
+								<p></p>
+								<ul style="display: none;">
+									<li><a href="javascript:;">转移到</a></li>
+									<li><a href="javascript:;">导出为Word</a></li>
+									<li><a href="javascript:;">打印</a></li>
+									<li><a href="javascript:;">删除</a></li>
+									<li><a href="javascript:;">导出为pdf</a></li>
+									<li><a href="javascript:;">导出为htm</a></li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<div class="editorbox"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// 下拉
+			$('.dropdown p').mouseenter(function () {
+				$(this).siblings('ul').slideDown(200);
+			});
+			$('.dropdown').mouseleave(function () {
+				$(this).find('ul').slideUp(200);
+			});
+
+			// 计算右侧宽度
+			getWidth();
+			$(window).resize(function () {
+				getWidth()
+			});
+			function getWidth() {
+				var leftW=$('.leftbar').outerWidth();
+				var middleW=$('.middlebar').outerWidth();
+				var windowW=$(window).width();
+				$('.rightbar').css("width",windowW-leftW-middleW);
+			}
+			
+			// 中间切换
+			$('.createNote .middlebar .panel-hd span').click(function () {
+				$(this).addClass('cur').siblings().removeClass('cur').parent().siblings().children().eq($(this).index()).show().siblings().hide();
+			})
+			$('.createNote .middlebar .tab-nav span').click(function () {
+				$(this).addClass('cur').siblings().removeClass('cur').parent().siblings().children('.cont').eq($(this).index()).addClass('cur').siblings().removeClass('cur');
+			});
+
+			// 左侧切换
+			$('.createNote .leftbar li').click(function () {
+				$(this).addClass('cur').siblings().removeClass('cur');
+				$('.middlebar').children().eq($(this).index()).show().siblings().hide();
+			});
+		</script>
+	</body>
+</html>

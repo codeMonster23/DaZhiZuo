@@ -1,0 +1,33 @@
+.header{ height: 60px; background-color: #191919; color: #fafafa; font-family: "Microsoft Yahei"; }
+.header .inner{ height: 100%; }
+.header a{ color: #fafafa; }
+.header .logo{ line-height: 60px; font-size: 30px; }
+.header .logo img{ display: inline; vertical-align: middle; margin-left: 20px; }
+.header .nav{ height: 60px;line-height: 60px; margin-left: 436px; }
+.header .nav a{ margin-right: 60px; font-size: 22px; }
+.header .nav a:hover,.header .nav a.cur{ color: #5dc560; }
+.logo .subtitle{ margin-left: 5px; font-size: 16px; color: #fafafa; }
+.header .account{ line-height: 60px; font-size: 16px; overflow: hidden; }
+.header .account span{ float: left; }
+.main{ width: 1303px; margin: 34px auto 75px; border: 1px solid #e7e7e7; border-bottom-color: #d9d9d9; border-top-color: #f4f4f4;background: #fff; }
+.sidebar{ width: 299px; border-right: 1px solid #dfdfdf; background: #fafafa; font-family: "Microsoft Yahei"; }
+.sidebar .profile{ height: 145px; padding-top: 20px; margin-bottom: 20px; background: #5dc560 url(../../images/notes/bg1.jpg) no-repeat; }
+.sidebar .profile .avatar{ width: 100px; height: 100px; border: 1px solid #fff; border-radius: 50%; margin: 0 auto; }
+.sidebar .profile .avatar img{ border-radius: 50%; }
+.sidebar .profile .name{ margin-top: 5px; font-size: 22px; color: #fff; }
+.sidebar .sidenav .item{ padding: 17px 0 8px 0;border-bottom: 1px solid #e6e6e6; }
+.sidebar .sidenav .item.last{ border-bottom: none; padding-bottom: 50px;}
+.sidebar .sidenav .item.cur{ border-left-color: #8ea2bd; border-bottom: none; background: #edf0f7; }
+.sidebar .sidenav .item h2,.sidebar .sidenav .item li{ border-left: 4px solid #fafafa; }
+.sidebar .sidenav .item.spec{padding: 0;}
+.sidebar .sidenav .item.spec h2{height: 60px;line-height: 60px;margin-bottom: 0;}
+.sidebar .sidenav .item h2{ padding-left: 78px; margin-bottom: 9px; background: url(../../images/notes/sidenav1.png) 32px center no-repeat; font-size: 18px; font-weight: normal; }
+.sidebar .sidenav .item2 h2{ background-image:url(../../images/notes/sidenav2.png) }
+.sidebar .sidenav .item3 h2{ background-image:url(../../images/notes/sidenav3.png) }
+.sidebar .sidenav .item4 h2{ background-image:url(../../images/notes/sidenav4.png) }
+.sidebar .sidenav .item5 h2{ background-image:url(../../images/notes/sidenav5.png) }
+.sidebar .sidenav .item6 h2{ background-image:url(../../images/notes/sidenav6.png) }
+.sidebar .sidenav .item li{ line-height: 34px; padding-left: 78px; }
+.sidebar .sidenav .item li a{ font-size: 14px; color: #4a4a4a; }
+.sidebar .sidenav .item li a:hover{ color: #31ac35; }
+.sidebar .sidenav .item .cur{border-left-color: #8ea2bd; border-bottom: none; background-color: #edf0f7; }

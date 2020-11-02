@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>资料库</title>
+	<link rel="stylesheet" href="../css/public/global.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link href="../css/database/database1.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/public/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../js/public/placeholder.js"></script>
+</head>
+<body>
+	<div class="dbHead">
+    	<a href="# " class="left"><img src="../images/database/db_logo.gif" width="263" height="60"></a>
+        <div class="account right"><span class="username">许馨</span><span>[<a href="">退出</a>]</span></div>
+    </div>
+    <div class="dbBanner dbBanners"><a href="#" class="link"></a></div>
+    <!--高级搜索-->
+    <div class="dbsearcherWrap">
+    	<div class="tab">
+        	<a href="#">普通搜索</a>
+            <a href="javascript:;" class="cur">高级搜索</a>
+        </div>
+        <div class="tabCont">
+        	<div class="item clearfix"><label class="left">文献类型</label><span class="left check cur">全部</span><span class="left check">期刊</span><span class="left check">报纸</span><span class="left check">会议论文</span></div>
+            <div class="item itemM clearfix">
+            	<label class="left">搜索位置</label>
+                <div class="left inputs">
+            		<div class="inputWrap"><span class="name left">主题：</span><input type="text"></div>
+            		<div class="inputWrap"><span class="name left">篇名：</span><input type="text"></div>
+                    <div class="inputWrap"><span class="name left">作者：</span><input type="text"></div>
+                    <div class="inputWrap"><span class="name left">摘要：</span><input type="text"></div>
+                    <div class="inputWrap"><span class="name left">全文：</span><input type="text"></div>
+            	</div>
+            </div>
+            <div class="item clearfix"><label class="left">发表时间</label>
+            	<div class="yearwrap left">
+                    	<i class="left">从</i>
+                        <div class="fromwrap left positionR"><p class="p from right positionR"><b>不限</b><span class="positionA"></span></p>
+                        <ul class="fromlist positionA">
+                        	<li>不限</li>
+                        </ul>
+                        </div>
+                        <i class="left">到</i>
+                        <div class="towrap left positionR"><p class="p to right positionR"><b>不限</b><span class="positionA"></span></p>
+                        <ul class="tolist positionA">
+                        	<li class="ndy">不限</li>
+                        </ul>
+                        </div>
+                        	<script>
+							$(".search .select li").click(function(){
+							$(this).parents(".select").siblings("input").css({"display":"block"})
+							$(this).parents(".select").siblings(".yearwrap").css({"display":"none"})
+							})
+							//点击发表时间
+							$(".search .fbsj").click(function(){
+							$(this).parents(".select").siblings("input").css({"display":"none"})
+							$(this).parents(".select").siblings(".yearwrap").css({"display":"block"})
+								})
+							$(".from").click(function(){
+								var start = 1900; // 指定开始年份
+								var end = new Date().getFullYear(); // 获取当前年份
+								for(i=start;i<=end;i++)
+								{$(".fromlist").append("<li>"+i+"年</li>")}
+								})
+							$(".to").click(function(){
+							var start = 1900; // 指定开始年份
+							var end = new Date().getFullYear(); // 获取当前年份
+							for(i=start;i<=end;i++)
+								{$(".tolist .ndy").after("<li>"+i+"年</li>")}}) 
+                	</script>
+                        </div>
+             </div>
+            <div class="item clearfix"><label class="left">文献来源</label><input type="text" class="normal left"></div>
+            <div class="item clearfix"><label class="left">支持资金</label><input type="text" class="normal left"></div>
+            <div class="item clearfix"><label class="left">作者单位</label><input type="text" class="normal left"></div>
+            <div class="btns"><a href="javascript:;" class="a1 left">高级搜索</a><a href="javascript:;" class="a2 right">重置信息</a></div>
+        </div>
+        <script>
+			//日期选择
+					$(".yearwrap .p").click(function(e){
+						$(".yearwrap ul").hide();
+						if($(this).siblings("ul").css("display")=="none"){
+						   $(this).siblings("ul").slideDown("fast");
+						}else{
+							$(this).siblings("ul").slideUp("fast");
+						}
+						e.stopPropagation();
+					});
+					$(".yearwrap ul").on("click","li",function(){
+						var txt = $(this).text();
+						$(this).parent().siblings(".p").find("b").html(txt);
+						$(".yearwrap ul").hide();
+					});
+						$(document).click(function(){
+						 $(".yearwrap ul").hide();
+					});
+					(".from").click(function(){
+								var start = 1900; // 指定开始年份
+								var end = new Date().getFullYear(); // 获取当前年份
+								for(i=start;i<=end;i++)
+								{$(".fromlist").append("<li>"+i+"年</li>")}
+								})
+							$(".to").click(function(){
+							var start = 1900; // 指定开始年份
+							var end = new Date().getFullYear(); // 获取当前年份
+							for(i=start;i<=end;i++)
+								{$(".tolist .ndy").after("<li>"+i+"年</li>")}}) 
+        	</script>
+    </div>
+    <!--side-->
+    <div class="sideCol">
+    	<a href="javascript:;" class="toggle"></a>
+    	<div class="sideWrap">
+        	<a href="#" class="a1">笔记</a>
+            <a href="#" class="a2">摘记</a>
+            <a href="#" class="a3">资料库</a>
+        </div>
+    </div>
+    <script>
+	//sidecol高度
+	var height=Math.max($("html, body").height(),$(window).height())
+	$(".sideCol, .sideWrap").height(height-60)
+	//收起展开
+	$(".sideCol .toggle").click(function(){
+		$(".sideCol .sideWrap").toggleClass("fold")
+		})
+	//单选
+	$(".item .check").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur")
+		})
+    </script>
+</body>
+</html>

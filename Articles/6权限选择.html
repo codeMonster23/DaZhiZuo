@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大智作</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link href="../css/public/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/public/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/Articles/header-and-footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/Articles/newEdit.css" rel="stylesheet" type="text/css">
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/jquery.promptToggle.js"></script>
+</head>
+
+<body bgcolor="#cccccc">
+<div class="modal public"> <a href="javascript:;" class="close"></a>
+    <h1>权限</h1>
+    <div class="cont">
+        <div class="choose">
+            <p class="name">绿色蔬菜出口加工项目可行性研究报告</p>
+            <div class="item clearfix"><span class="left radio"></span><label class="left">公开</label><span class="colorGrey">任何人均可查看</span></div>
+             <div class="item clearfix"><span class="left radio con"></span><label class="left">加密</label><span class="colorGrey left">仅限拥有密码者查看，更加隐私安全</span></div>
+            <div class="clearfix padding"><span class="colorGrey left">访问密码</span><input type="text" class="left"></div>
+            <div class="item clearfix"><span class="left radio cur"></span><label class="left">私密</label><span class="colorGrey left"> 仅自己可见</span></div>
+        </div>
+        <script>
+            $(".item").click(function(){
+                $(".item .radio").removeClass("cur")
+                $(this).find(".radio").addClass("cur")
+/*                if($(".con").hasClass("cur")){
+                    $(".padding .read").hide()
+                    $(".padding input").show()
+                    }
+                else{
+                    $(".padding .read").show()
+                    $(".padding input").hide()
+                    }*/
+                })
+        </script>
+        <div class="bottom">
+        	<div class="checkbox"><input type="checkbox" class="left" id="ck"><label class="left" for="ck">显示在我的个人主页</label></div>
+            <a href="javascript:;" class="sure">确定</a>
+        </div>
+    </div>
+     
+</div>
+</body>
+</html>

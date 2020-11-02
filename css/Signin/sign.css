@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+/*首页*/
+.width1202{ width:1202px; margin:0 auto;}
+.section1{ height:540px; min-width:1202px; background:#5B647C url(../../images/Signin/bg1.png) no-repeat center;}
+.section1 .loginWrap{ position:relative;}
+.section1 .loginWrap .logo{ position:absolute; left:-103px; top:20px;}
+.section1 .loginWrap .text{ padding-top:171px;}
+.section1 .loginWrap .text .type{ margin-top:34px; }
+.section1 .loginWrap .text .type a{ float:left; width:163px; height:62px; margin-right:35px;}
+.section1 .loginWrap .loginBox{ float:right; margin-right:37px; margin-top:80px; width:360px; padding:0 30px 23px; background-color:#ffffff; border-radius:4px;}
+.section1 .loginWrap .loginBox h1{ font-size:20px; font-family:"Microsoft Yahei"; line-height:78px; font-weight:normal; height:78px;}
+.section1 .loginWrap .loginBox h1 a{ float:right; font-family:"宋体"; font-size:14px; color:#2475e3;}
+.section1 .loginWrap .loginBox .item{ height:46px; position:relative;}
+.section1 .loginWrap .loginBox .item input{ width:350px; padding:12px 0 12px 8px; border:1px solid #E0E0E0; font-size:14px; font-family:"宋体";} input::-moz-placeholder{ color:#b5b5b5;}
+input:-ms-input-placeholder{ color:#b5b5b5;}
+input::-webkit-input-placeholder{ color:#b5b5b5;}
+.section1 .loginWrap .loginBox .item input:focus{ border-color:#4AB353; }
+.section1 .loginWrap .loginBox .item .keyboard{ position:absolute; top:16px; right:7px; width:18px; height:14px; background:url(../../images/Signin/keyboard.gif) no-repeat;}
+.section1 .loginWrap .loginBox .tip{ height:15px; line-height:15px;}
+.section1 .loginWrap .loginBox .loginm{ height:18px; line-height:18px; margin-bottom:20px;}
+.section1 .loginWrap .loginBox .loginm input{ float:left; width:13px; height:13px; margin-right:7px; margin-top:3px;}
+.section1 .loginWrap .loginBox .loginm a{ float:right; color:#5b5b5b;}
+.section1 .loginWrap .loginBox .login{ display:block; height:50px; line-height:50px; text-align:center;font-size:20px; font-family:"Microsoft Yahei"; color:#ffffff; background-color:#059419; border-radius:4px; margin-bottom:32px;}
+.section1 .loginWrap .loginBox .fast{ line-height:20px; height:10px; margin-bottom:24px; border-bottom:1px solid #DBDBDB; text-align:center;}
+.section1 .loginWrap .loginBox .fast span{ padding:0 30px; background-color:#ffffff;}
+.section1 .loginWrap .loginBox .btns{ text-align:center;}
+.section1 .loginWrap .loginBox .btns .m{ margin-right:26px; margin-left:26px;}
+.section1 .loginWrap .loginBox .btns a img{ display:inline-block;}
+
+.section2{ height:654px; min-width:1202px; background:#FFFFFF url(../../images/Signin/bg2.jpg) no-repeat center;}
+.section3{ height:612px; min-width:1202px; background:#1D71D1 url(../../images/Signin/bg3.jpg) no-repeat center;}
+.section4{ height:308px; padding-top:545px;min-width:1202px; background:#EFEFEE url(../../images/Signin/bg4.jpg) no-repeat center;}
+.section4 ul{ width:1177px; margin:0 auto;font-family:"Microsoft Yahei";}
+.section4 ul .p1{ line-height:64px; text-align:center; color:#1e1e1e; font-size:20px;}
+.section4 ul .p2{ line-height:24px; font-size:16px; color:#5a5a5a;}
+.section4 ul li{ float:left;padding-top:140px;}
+.section4 ul .li1{ width:194px; margin-right:100px; background:url(../../images/Signin/icon1.png) no-repeat center top;}
+.section4 ul .li2{ width:256px; margin-right:87px; background:url(../../images/Signin/icon2.png) no-repeat center top;}
+.section4 ul .li3{ width:228px; margin-right:82px; background:url(../../images/Signin/icon3.png) no-repeat center top;}
+.section4 ul .li4{ width:230px;  background:url(../../images/Signin/icon4.png) no-repeat center top;}
+.section5{ height:460px; padding-top:200px;min-width:1202px; background:#4A64CD url(../../images/Signin/bg5.jpg) no-repeat center;}
+.section5 ul{ width:1202px; margin:0 auto;}
+.section5 ul li{ margin-right:6px;}
+.section5 ul li.last{ margin-right:0;}
+.section6{ padding:110px 0 50px; min-width:1202px;font-family:"Microsoft Yahei";}
+.section6 ul{ width:1202px; margin:0 auto 45px;}
+.section6 ul p{ line-height:30px; font-size:16px;}
+.section6 ul li{ padding-top:226px;}
+.section6 ul .li1{ width:242px; margin-right:78px; background:url(../../images/Signin/icon5.png) no-repeat center top;}
+.section6 ul .li2{ width:242px; margin-right:75px; background:url(../../images/Signin/icon6.png) no-repeat center top;}
+.section6 ul .li3{ width:256px; margin-right:68px; background:url(../../images/Signin/icon7.png) no-repeat center top;}
+.section6 ul .li4{ width:240px;background:url(../../images/Signin/icon8.gif) no-repeat center top;}
+.section6 .btns{ width:600px; margin:0 auto; height:48px; line-height:48px; }
+.section6 .btns a{ width:265px;text-align:center; font-size:22px; border-radius:4px; color:#ffffff;}
+.section6 .btns .login{ background-color:#059419;}
+.section6 .btns .register{ background-color:#3587E7;}
+.footer{ min-width:1202px; padding:40px 0; text-align:center; line-height:30px;font-family:"Microsoft Yahei"; font-size:14px; background-color:#EBEBEB;}
+/*注册页*/
+.bgWrap{ background:#F0EEFC url(../../images/Signin/bg6.jpg) no-repeat center top; min-width:1202px;}
+.bgWrap .wrap{ width:995px; margin:0 auto; position:relative; padding-top:105px;}
+.bgWrap .wrap .logo1{ position:absolute; top:28px; left:-170px;}
+.wrap .reWrap{ width:371px; padding:0 42px 36px; background:#ffffff; margin:29px auto 60px; border:1px solid #DDD9E9;}
+.wrap .reWrap h1{ height:84px; line-height:84px; padding-top:20px;font-family:"Microsoft Yahei"; font-size:20px; font-weight:normal; }
+.wrap .reWrap .item{ height:44px; font-size:14px; }
+.wrap .reWrap .item label{ width:56px; text-align:right; line-height:44px; margin-right:10px;}
+.wrap .reWrap .item input{ float:left;width:287px; padding:11px 8px; border:1px solid #E0E0E0; line-height:20px; font-family:"宋体";font-size:14px; }
+.wrap .reWrap .warn{ line-height:25px; height:25px; color:#C81522; padding-left:67px;}
+.wrap .reWrap .item .short{ width:178px; border-right:none 0;}
+.wrap .reWrap .item input:focus{ border-color:#4AB353;}
+.wrap .reWrap .item .yzm{ line-height:44px; text-align:center; color:#ffffff; width:110px; background-color:#3FB03B; cursor:pointer;}
+.wrap .reWrap .item .yzm.disable{ background-color:#B3B3B3; cursor:text;}
+.wrap .reWrap .reading{ padding-left:66px; line-height:16px; height:16px; margin-bottom:20px;}
+.wrap .reWrap .reading input{ float:left; width:13px; height:13px; margin-right:9px; margin-top:2px;}
+.wrap .reWrap .reading label{ float:left;}
+.wrap .reWrap .reading label a{ color:#0A66CA;}
+.wrap .reWrap .ljzc{ display:block; width:364px; height:50px; line-height:50px; text-align:center; border-radius:4px; color:#ffffff; background-color:#07941A;font-family:"Microsoft Yahei"; font-size:20px;}
+.wrap .reWrap .remind{ line-height:50px; height:50px; text-align:center; margin-bottom:15px; color:#787878;}
+.wrap .reWrap .remind a{ color:#FF5711;}
+.wrap .reWrap .fast{ line-height:20px; height:10px; margin-bottom:24px; border-bottom:1px solid #DBDBDB; text-align:center;}
+.wrap .reWrap .fast span{ padding:0 30px; background-color:#ffffff;}
+.wrap .reWrap .btns{ text-align:center;}
+.wrap .reWrap .btns .m{ margin-right:26px; margin-left:26px;}
+.wrap .reWrap .btns a img{ display:inline-block;}
+/*注册成功*/
+.sucBox{ background-color:#ffffff; border:1px solid #DFDDED; padding:0 45px;font-family:"Microsoft Yahei";}
+.sucBox h1{ padding:22px 0 0 44px; font-size:18px; font-weight:normal; line-height:30px;}
+.sucBox h1 span{ color:#ff580e;}
+.sucBox h2{ line-height:55px; text-align:center; font-size:24px; font-weight:normal; }
+.sucBox .tagBox{ background-color:#F7F7F7; border:1px solid #EAEAEA; padding-bottom:20px; margin-bottom:20px;}
+.sucBox .tagBox p{ line-height:46px; text-align:center; margin-bottom:8px; color:#787878; font-size:16px;}
+.sucBox .tagBox ul{ padding-left:28px;}
+.sucBox .tagBox ul li{ float:left; margin-right:12px; margin-bottom:12px; width:110px; padding-top:70px; line-height:40px; text-align:center; line-height:40px; font-size:14px; color:#ffffff; position:relative;}
+.sucBox .tagBox ul li a{ position:absolute; width:110px; height:110px; left:0; top:0;}
+.sucBox .tagBox ul li a.cur{ background:url(../../images/Signin/cover.png) no-repeat;}
+.sucBox .tagBox ul .li1{ background:#F49F9F url(../../images/Signin/tag1.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li2{ background:#EBC34E url(../../images/Signin/tag2.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li3{ background:#D69CE2 url(../../images/Signin/tag3.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li4{ background:#F1975C url(../../images/Signin/tag4.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li5{ background:#62CFEF url(../../images/Signin/tag5.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li6{ background:#5F9BEB url(../../images/Signin/tag6.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li7{ background:#96CA5D url(../../images/Signin/tag7.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li8{ background:#7AC59B url(../../images/Signin/tag8.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li9{ background:#6181AA url(../../images/Signin/tag9.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li10{ background:#897AC0 url(../../images/Signin/tag10.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li11{ background:#F49F9F url(../../images/Signin/tag11.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li12{ background:#B1C426 url(../../images/Signin/tag12.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li13{ background:#CD985A url(../../images/Signin/tag13.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li14{ background:#62CFEF url(../../images/Signin/tag14.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li15{ background:#5F9BEB url(../../images/Signin/tag15.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li16{ background:#D69CE2 url(../../images/Signin/tag16.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li17{ background:#7AC59B url(../../images/Signin/tag17.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li18{ background:#96CA5D url(../../images/Signin/tag18.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li19{ background:#E48977 url(../../images/Signin/tag19.png) no-repeat center 16px;}
+.sucBox .tagBox ul .li20{ background:#F1975C url(../../images/Signin/tag20.png) no-repeat center 16px;}
+.sucBox .start{ display:block; width:210px; height:50px; text-align:center; line-height:50px; color:#ffffff; font-size:20px; background:#07941A; border-radius:4px; margin:0 auto 15px;}
+.bgWrap .footer{ background-color:transparent;}
+/*404页面*/
+.Wrap404{ background-color:#ECFFEF;}
+.Wrap404 .box404{ width:596px; margin:0 auto; padding-top:309px; background:url(../../images/Signin/404.png) no-repeat center 157px;}
+.Wrap404 .box404 p{font-family:"Microsoft Yahei"; font-size:30px; text-align:center; color:#5dc560; border-bottom:1px solid #5BC461; line-height:95px; margin-bottom:20px;}
+.Wrap404 .box404 .btns{ height:38px; width:293px; margin:0 auto;}
+.Wrap404 .box404 .btns a{ width:130px; height:36px; line-height:36px; text-align:center; font-size:16px; font-weight:bold; border-radius:4px; border:1px solid #5BC461;}
+.Wrap404 .box404 .btns .a1{ color:#ffffff; background-color:#5BC461;}
+.Wrap404 .box404 .btns .a2{ color:#5BC461; background-color:#ffffff;}

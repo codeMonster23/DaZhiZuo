@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大智作</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/public/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/Articles/database.css" rel="stylesheet" type="text/css">
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/pic_tab.js"></script>
+</head>
+<body>
+    <div class="mask"></div>
+    <div class="modal picModal">
+        <div class="modal-hd">
+            标题
+            <a href="" class="close"></a>
+        </div>
+        <div class="modal-bd">
+            <div class="slide" id="slide1">
+                <div class="slide_pic" id="slide_pic">
+                    <div class="prev" id="prev">
+                        <img src="../images/Articles/database/icon5.png" width="28" height="51"  />
+                    </div>
+                    <div class="next" id="next">
+                        <img src="../images/Articles/database/icon6.png" width="28" height="51"  />
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic1.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic2.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic3.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic4.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic5.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic6.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic1.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic2.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic3.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic4.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic5.jpg"/></a></li>
+                        <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic6.jpg"/></a></li>
+                    </ul>
+                </div>
+                <div class="min_pic">
+                    <div class="num clearfix" id="slide_num">
+                        <ul>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic1.jpg" /></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic2.jpg" /></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic3.jpg" /></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic4.jpg" /></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic5.jpg" /></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic6.jpg" /></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic1.jpg"/></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic2.jpg"/></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic3.jpg"/></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic4.jpg"/></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic5.jpg"/></a></li>
+                            <li><a href="javascript:;"><img src="../imagesTemp/Articles/pic6.jpg"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="insertBtn">插入</a>
+        </div>
+    </div>
+    <script>
+        jq(function(){
+            jq('#slide1').banqh({
+                box:"#slide1",//总框架
+                pic:"#slide_pic",//大图框架
+                pnum:"#slide_num",//小图框架
+                prev:"#prev",//大图左箭头
+                next:"#next",//大图右箭头
+                autoplay:true,//是否自动播放
+                interTime:5000,//图片自动切换间隔
+                delayTime:400,//切换一张图片时间
+                pop_delayTime:400,//弹出框切换一张图片时间
+                order:0,//当前显示的图片（从0开始）
+                picdire:true,//大图滚动方向（true为水平方向滚动）
+                mindire:true,//小图滚动方向（true为水平方向滚动）
+                min_picnum:5,//小图显示数量
+                pop_up:false//大图是否有弹出框
+            })
+        })
+</script>
+</body>
+</html>
